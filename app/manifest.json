@@ -208,6 +208,11 @@
       "matches": [ "*://*.youtube.de/*" ],
       "js": [ "scripts/blocker_youtube.js" ],
       "css": [ "css/overlay.css" ]
-	}
+	},
+	{
+      "matches": [ "*://*.zdf.de/*" ],
+      "js": [ "scripts/blocker_zdf.js" ],
+      "css": [ "css/overlay.css" ]
+}
   ]
 }
