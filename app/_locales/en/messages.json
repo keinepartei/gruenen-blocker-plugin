@@ -1,14 +1,14 @@
 {
   "appName": {
-    "message": "Bündnis 90/Die Grünen Blocker",
-    "description": "Blockt Inhalte von Bündnis 90/Die Grünen."
+    "message": "Bündnis 90/Die Grünen Content Blocker",
+    "description": "Blocks contents by Bündnis 90/Die Grünen."
   },
   "appShortName": {
     "message": "Grünen Blocker",
-    "description": "Blockt Inhalte von den Grünen."
+    "description": "Blocks contents by Bündnis 90/Die Grünen."
   },
   "appDescription": {
-    "message": "Bündnis 90/Die Grünen Blocker von keiner Partei.",
-    "description": "Bündnis 90/Die Grünen Blocker von keiner Partei."
+    "message": "Bündnis 90/Die Grünen Content Blocker by No Party.",
+    "description": "Blocks contents by Bündnis 90/Die Grünen."
   }
 }
