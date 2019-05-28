@@ -36,11 +36,16 @@ blocker.watchPageForMutations();
  * BILD.de uses teaser images (sometimes without alt attributes). So we try to
  * find teasers by its article URI
  */
-console.log("#### NO PARTY CONTENT-BLOCKER FOR URL PARTS TODO: Check. ####");
+console.log("#### NO PARTY CONTENT-BLOCKER FOR URL PARTS ####");
 [
-    "//a[contains(@href,'-gruene-')]",
-    "//a[contains(@href,'/gruene-')]",
-    "//a[contains(@href,'-gruene.')]"
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'-gruene')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'gruene-')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'gruene.')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'gruenen-')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'gruenen.')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'-buendnis90')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'buendnis90-')]",
+    "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'buendnis90.')]"
 ].forEach(function(xpathExpression) {
     let teaserLinkBlocker = new Blocker([ 
         {
