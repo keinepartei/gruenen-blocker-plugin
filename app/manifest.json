@@ -2,7 +2,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
@@ -56,6 +56,7 @@
 		"*://*.gruene-bohmte.de/*",
 		"*://*.gruene-brandenburg.de/*",
 		"*://*.gruene-brandenburg-havel.de/*",
+		"*://*.gruene-bremen.de/*",
 		"*://*.gruene-bundestag.de/*",
 		"*://*.gruene-bw.de/*",
 		"*://*.gruene-chemnitz.de/*",
@@ -140,7 +141,7 @@
 		"*://*.bergkamen-gruene.de/*",
 		"*://*.bruehlgruen.de/*"
       ],
-      "js": [ "scripts/blocker_b90-gruene.js" ],
+      "js": [ "scripts/blocker_b90-gruene.js", "scripts/showConfirmation.js" ],
       "css": [ "css/overlay.css" ]
     },
     {

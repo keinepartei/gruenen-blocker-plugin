@@ -59,6 +59,7 @@ const overlaySmallNode = parseHtml(overlayHTMLSmall);
  * of css selectors and can tell you if green people are anarchists.
  */
 export class Blocker {
+	
     /**
 	 * 
 	 * @param selectorList
