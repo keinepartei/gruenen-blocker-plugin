@@ -1,8 +1,15 @@
-Copyright (c) 2019, Keine PARTEI
+Copyright (c) 2019, "keinepartei" (https://github.com/keinepartei)
 
-(Hard) forked from "Die PARTEI" (https://github.com/dieparteidiepartei/afd-blocker-plugin) by no party ("keinepartei").
+(Hard) forked from "dieparteidiepartei" (https://github.com/dieparteidiepartei) 
+https://github.com/dieparteidiepartei/afd-blocker-plugin 
+commit e5fd19840713818ef3e1bb131a9d1bbbe558684f.
 
-This application / plug-in is published under the GNU Lesser General Public License Version 3, 29 June 2007 (see: https://www.gnu.org/licenses/lgpl-3.0.en.html).
+Includes code/gifts from different other authors on https://github.com as 
+mentioned explicitly in the concerned files.  
+
+This application / plug-in is published under the 
+GNU Lesser General Public License Version 3, 29 June 2007 
+(see: https://www.gnu.org/licenses/lgpl-3.0.en.html).
 
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
 WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
@@ -12,7 +19,9 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-See original license from "Die PARTEI" below.
+See original license from "dieparteidiepartei" 
+(https://github.com/dieparteidiepartei/afd-blocker-plugin/LICENSE 
+commit 0e45aed998a838eaee4f7dda5b2f73b0e03b89ff) below.
 
 ========================================================================  
 
