@@ -20,6 +20,11 @@
       "js": [ "scripts/blocker_faz.js" ],
       "css": [ "css/overlay.css" ]
 	},
+	{
+      "matches": [ "*://*.hna.de/*" ],
+      "js": [ "scripts/blocker_hna.js" ],
+      "css": [ "css/overlay.css" ]
+	},
     {
       "matches": [ "*://*.sueddeutsche.de/*" ],
       "js": [ "scripts/blocker_sueddeutsche.js" ],
