@@ -5,7 +5,7 @@
  */
 const overlayHTML = `
     <div class="nopartycontentblockedoverlay">
-        <div class="nopartycontentblockedoverlay_top">#Bündnis90/Die Gruenen Blocker</div>
+        <div class="nopartycontentblockedoverlay_top">#B&uuml;ndnis90/Die Gr&uuml;nen Blocker</div>
         <div class="nopartycontentblockedoverlay_bottom">
             100% B90/Die Grünen inhaltsfrei<br>
             Für Sie blockiert von keiner Partei!<br>
