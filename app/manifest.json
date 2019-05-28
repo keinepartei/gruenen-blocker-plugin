@@ -10,6 +10,16 @@
     "128": "images/icon-128.png"
   },
   "content_scripts": [
+  	{
+      "matches": [ "*://*.bild.de/*" ],
+      "js": [ "scripts/blocker_bild.js" ],
+      "css": [ "css/overlay.css" ]
+    },
+    {
+      "matches": [ "*://*.faz.net/*" ],
+      "js": [ "scripts/blocker_faz.js" ],
+      "css": [ "css/overlay.css" ]
+	},
     {
       "matches": [ "*://*.sueddeutsche.de/*" ],
       "js": [ "scripts/blocker_sueddeutsche.js" ],
@@ -26,10 +36,10 @@
       "css": [ "css/overlay.css" ]
     },
     {
-      "matches": [ "*://*.bild.de/*" ],
-      "js": [ "scripts/blocker_bild.js" ],
+      "matches": [ "*://*.tagesschau.de/*" ],
+      "js": [ "scripts/blocker_tagesschau.js" ],
       "css": [ "css/overlay.css" ]
-    },
+	},
     {
       "matches": [ "*://twitter.com/*" ],
       "js": [ "scripts/blocker_twitter.js" ],
