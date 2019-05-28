@@ -1,0 +1,33 @@
+
+.nopartycontentblocked {
+    position: relative!important;
+}
+
+.nopartycontentblockedoverlay {
+    font-family: Helvetica, Arial, sans-serif;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99998;
+    text-align: right;
+}
+
+.nopartycontentblockedoverlay_top, .nopartycontentblockedoverlay_bottom{
+    position: absolute;
+    right: 5px;
+}
+
+.nopartycontentblockedoverlay_bottom{
+    bottom: 5px;
+}
+
+.nopartycontentblockedoverlay_top {
+    top: 5px;
+}
