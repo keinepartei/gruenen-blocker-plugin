@@ -198,6 +198,16 @@
       "matches": [ "*://*.nordbayern.de/*" ],
       "js": [ "scripts/blocker_nordbayern.js" ],
       "css": [ "css/overlay.css" ]
-    }
+    },
+    {
+      "matches": [ "*://*.youtube.com/*" ],
+      "js": [ "scripts/blocker_youtube.js" ],
+      "css": [ "css/overlay.css" ]
+	},
+	{
+      "matches": [ "*://*.youtube.de/*" ],
+      "js": [ "scripts/blocker_youtube.js" ],
+      "css": [ "css/overlay.css" ]
+	}
   ]
 }
