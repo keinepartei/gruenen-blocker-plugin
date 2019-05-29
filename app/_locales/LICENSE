@@ -1,0 +1,12 @@
+/**
+ * Copyright (c) 2019, kagal "keinepartei" (https://github.com/keinepartei).
+ * 
+ * Includes every langugage file in this or sub folders.
+ *  
+ * ./en/messages.json -> English language file.
+ * ./de/messages.json -> German language file. 
+ *
+ * Published under the GNU Lesser General Public License Version 3, 29 June 2007
+ * (see: https://www.gnu.org/licenses/lgpl-3.0.en.html) and see LICENSE
+ * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
+ */
