@@ -1,4 +1,21 @@
 /**
+ * Copyright (c) 2019, kagal "keinepartei" (https://github.com/keinepartei).
+ * 
+ * Bündnis90/Die Grünen Content Blocker Browser Plug-In
+ * (https://github.com/keinepartei/gruenen-blocker-plugin) is licensed under the
+ * GNU LGPL3.0 from 29 June 2007
+ * (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+ * 
+ * Base content blocker.
+ * 
+ * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
+ * licensed under the ISC License by the Internet Systems Consortium
+ * (www.isc.org)
+ * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_general.js
+ * commit 336161146091af474d98ed3714a24121a616acd6.
+ */
+
+/**
  * Overlay HTML for big teasers and articles
  * 
  * @type {string}

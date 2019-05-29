@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2019, kagal (https://github.com/keinepartei).
+ * Copyright (c) 2019, kagal "keinepartei" (https://github.com/keinepartei).
  * 
  * Bündnis90/Die Grünen Content Blocker Browser Plug-In
  * (https://github.com/keinepartei/gruenen-blocker-plugin) is licensed under the
