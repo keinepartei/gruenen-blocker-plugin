@@ -8,5 +8,5 @@
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
  */
 .nopartycontentblockedoverlay {
-    height: calc(100% - 16px);
+	height: calc(100% - 16px);
 }
