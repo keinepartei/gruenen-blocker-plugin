@@ -14,9 +14,9 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_focus.js
  * commit a102033e9508dca4463a2db26166ddb39a4014ce.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -69,5 +69,4 @@ let blocker = new Blocker([
     }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

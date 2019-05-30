@@ -25,9 +25,9 @@
  * Erlanger Nachrichten - Fürther Nachrichten - Neumarkter nachrichten ....
  */
 
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -72,5 +72,4 @@ let blocker = new Blocker([
     }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

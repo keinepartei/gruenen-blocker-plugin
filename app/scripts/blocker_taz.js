@@ -14,9 +14,9 @@
  * https://github.com/AlkoholLiga/afd-blocker-plugin/blob/master/app/scripts/blocker_faz.js
  * commit aa40a331ef5e2e1a66c1f057008ec68640e77fe1.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -45,5 +45,4 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

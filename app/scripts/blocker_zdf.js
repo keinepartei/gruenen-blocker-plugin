@@ -15,9 +15,9 @@
  * https://github.com/MGierz/afd-blocker-plugin/blob/master/app/scripts/blocker_zdf.js
  * commit 876726e65ff63f7320b95f5c3dc7fb73bdd3eec1.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -42,5 +42,4 @@ let blocker = new Blocker([
     }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

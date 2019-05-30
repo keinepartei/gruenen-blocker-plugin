@@ -15,9 +15,9 @@
  * https://github.com/smidiii/afd-blocker-plugin/blob/master/app/scripts/blocker_youtube.js
  * commit 32eb7f0c9f66c8d2b472aeab5d7b12f9314ae784.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -47,5 +47,4 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Test Extension Options</title>
+</head>
+<body>
+	<h1>Blockierliste</h1>
+	<p>Bestimmen Sie selbst, welche Inhalte Sie blockieren
+		m&ouml;chten?</p>
+	<div>
+		<div>
+			<h2>Schnellzugriff</h2>
+			<ul>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_ALL_GREENS"
+							disabled="disabled"
+							checked="checked">
+						Gr&uuml;ne aller L&auml;nder
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_TRUMP">
+						Trump
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h2>Nach Land und Partei</h2>
+			<h3>Deutschland (DE)</h3>
+			<ul>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_GRUENE"
+							disabled="disabled"
+							checked="checked">
+						B&uuml;ndnis 90/Die Gr&uuml;nen
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_AFD"
+							disabled="disabled">
+						AfD
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_SPD">
+						SPD
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_DIE_LINKE">
+						Die Linke
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_CDU">
+						CDU
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_CSU">
+						CSU
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_FDP">
+						FDP
+					</label>
+				</li>
+				<li>
+					<label>
+						<input
+							type="checkbox"
+							id="block_DE_DIE_PARTEI">
+						Die PARTEI (Zwinkersmiley)
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="stored"></div>
+	<button id="store">Save</button>
+	<script src="options.js"></script>
+</body>
+</html>

@@ -14,9 +14,9 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_handelsblatt.js
  * commit f7f1dfd7077251363476fe3d118aaf8dfe31b818.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -54,5 +54,4 @@ let blocker = new Blocker([
 
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

@@ -8,15 +8,15 @@
  * 
  * Content blocker template for startpage.com.
  * 
- * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
- * licensed under the ISC License by the Internet Systems Consortium
- * (www.isc.org)
+ * Original source code is from "dieparteidiepartei"
+ * (https://github.com/dieparteidiepartei) licensed under the ISC License by the
+ * Internet Systems Consortium (www.isc.org)
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_search.js
  * commit 097cd8e9c3349110bf126d4942883fb544c931c5.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     /* www.startpage.com */
@@ -44,10 +44,6 @@ let blocker = new Blocker([
         selector: 'div.gsc-results div',
         type: 'big'
     },
-
-
-
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

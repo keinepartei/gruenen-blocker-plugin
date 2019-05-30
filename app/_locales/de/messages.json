@@ -1,15 +1,15 @@
 {
 	"appName": {
-		"message": "Bündnis 90/Die Grünen Content Blocker",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen."
+		"message": "Grünen Blocker",
+		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
 	},
 	"appShortName": {
 		"message": "Grünen Blocker",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen."
+		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
 	},
 	"appDescription": {
-		"message": "Bündnis 90/Die Grünen Content Blocker von Keine Partei.",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen."
+		"message": "Grünen Content Blocker von Keine Partei.",
+		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
 	},
 	"showConfirmation": {
 		"message": "Sie blockieren den gesamten Inhalt dieser Website auf eigenen Wunsch mit unserem Bündnis90/Die Grünen Content Blocker. Wir machen Sie darauf aufmerksam, dass Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung ebenfalls blockiert werden können. Klicken Sie deshalb auf 'Abbrechen', um diese Seite zu verlassen, oder auf 'OK', wenn Sie wirklich auf dieser Seite bleiben wollen.",

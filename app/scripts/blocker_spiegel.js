@@ -14,13 +14,17 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_spiegel.js
  * commit 8ed87c4379a474a04831a4a2aaabc472a7f6d915.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
         selector: 'div.teaser',
+        type: 'big'
+    },
+    {
+        selector: '.search-teaser',
         type: 'big'
     },
     {
@@ -42,13 +46,7 @@ let blocker = new Blocker([
     {
         selector: '.ui-tabs-panel',
         type: 'big'
-    },
-    {
-        selector: '.search-teaser',
-        type: 'big'
-    },
+    }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
-
+require("./run_blocker").run(blocker);

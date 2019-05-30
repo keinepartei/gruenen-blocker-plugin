@@ -14,9 +14,9 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_bild.js
  * commit acca1e3e930a0f5a4ef3189a54d11068625098aa.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([ 
     {
@@ -45,14 +45,13 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);
 
 /**
  * BILD.de uses teaser images (sometimes without alt attributes). So we try to
  * find teasers by its article URI
  */
-console.log("#### NO PARTY CONTENT-BLOCKER FOR URL PARTS ####");
+console.log("Call content blocker for URL parts.");
 [
     "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'-gruene')]",
     "//a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'gruene-')]",

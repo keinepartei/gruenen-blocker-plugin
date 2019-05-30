@@ -8,23 +8,23 @@
  * 
  * Content blocker template for facebook.com.
  * 
- * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
- * licensed under the ISC License by the Internet Systems Consortium
- * (www.isc.org)
+ * Original source code is from "dieparteidiepartei"
+ * (https://github.com/dieparteidiepartei) licensed under the ISC License by the
+ * Internet Systems Consortium (www.isc.org)
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_facebook.js
  * commit 0ab5a897909e311d50ccd69cae04485a45b444f5.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    {
-        selector: '._77we',
-        type: 'big'
+	{
+        selector: 'div._5pcb',
+        type: 'small'
     },
-    {
-        selector: '._6-e5',
+	{
+        selector: '._77we',
         type: 'big'
     },
     {
@@ -32,11 +32,11 @@ let blocker = new Blocker([
         type: 'big'
     },
     {
-        selector: 'div._5pcb',
-        type: 'small'
+        selector: '#facebook ._-kb div',
+        type: 'big'
     },
     {
-        selector: '#facebook ._-kb div',
+        selector: '._6-e5',
         type: 'big'
     },
     {
@@ -45,5 +45,4 @@ let blocker = new Blocker([
     }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

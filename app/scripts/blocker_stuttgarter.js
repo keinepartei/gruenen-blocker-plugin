@@ -8,18 +8,22 @@
  * 
  * Content blocker template for stuttgarter.de.
  * 
- * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
- * licensed under the ISC License by the Internet Systems Consortium
- * (www.isc.org)
+ * Original source code is from "dieparteidiepartei"
+ * (https://github.com/dieparteidiepartei) licensed under the ISC License by the
+ * Internet Systems Consortium (www.isc.org)
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_stuttgarter.js
  * commit 336161146091af474d98ed3714a24121a616acd6.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    {
+	{
+        selector: '.box-head',
+        type: 'big'
+    },
+	{
         selector: 'article',
         type: 'big'
     },
@@ -30,13 +34,7 @@ let blocker = new Blocker([
     {
         selector: '.mod-aside',
         type: 'big'
-    },
-    {
-        selector: '.box-head',
-        type: 'big'
     }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
-
+require("./run_blocker").run(blocker);

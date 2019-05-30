@@ -14,17 +14,13 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_twitter.js
  * commit cb5ab707a20283ea797196334ebb027e629fb26a.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
         selector: 'div.tweet',
-        type: 'big'
-    },
-    {
-        selector: 'div.ProfileCard',
         type: 'big'
     },
     {
@@ -35,7 +31,10 @@ let blocker = new Blocker([
         selector: 'div.entrylist__entry',
         type: 'small'
     },
+    {
+        selector: 'div.ProfileCard',
+        type: 'big'
+    }
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

@@ -3,13 +3,22 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.0.3",
-	"version_name": "0.0.3 beta",
+	"version": "0.0.4",
 	"author": "Keine Partei",
 	"default_locale": "en",
 	"icons": {
 		"16": "images/icon-16.png",
 		"128": "images/icon-128.png"
+	},
+	"permissions": [
+		"storage"
+	],
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
+	"background": {
+		"scripts": ["background.js"]
 	},
 	"content_scripts": [
 		{

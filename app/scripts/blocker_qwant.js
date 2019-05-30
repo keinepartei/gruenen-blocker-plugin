@@ -14,9 +14,9 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_qwant.js
  * commit e8f3d1460ccc6a9ed4ec83e228a8fe2478459194.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -37,5 +37,4 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);

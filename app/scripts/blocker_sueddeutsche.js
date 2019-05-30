@@ -14,9 +14,9 @@
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_sueddeutsche.js
  * commit acca1e3e930a0f5a4ef3189a54d11068625098aa.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -41,6 +41,4 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
-
+require("./run_blocker").run(blocker);

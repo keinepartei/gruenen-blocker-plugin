@@ -1,15 +1,15 @@
 {
 	"appName": {
-		"message": "Bündnis 90/Die Grünen Content Blocker",
-		"description": "Blocks contents by Bündnis 90/Die Grünen."
+		"message": "Grünen Blocker",
+		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
 	},
 	"appShortName": {
 		"message": "Grünen Blocker",
-		"description": "Blocks contents by Bündnis 90/Die Grünen."
+		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
 	},
 	"appDescription": {
-		"message": "Bündnis 90/Die Grünen Content Blocker by No Party.",
-		"description": "Blocks contents by Bündnis 90/Die Grünen."
+		"message": "Grünen Content Blocker by No Party.",
+		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
 	},
 	"showConfirmation": {
 		"message": "You block the entire content of this website at our own request with our Bündnis90 / Die Grünen Content Blocker. We draw your attention to the fact that compulsory information of the side provider to imprint, data protection and liability can also be blocked. Click on 'Cancel' to leave this page or on 'OK' if you really want to stay on this page.",

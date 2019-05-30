@@ -18,5 +18,5 @@
     "webextension-toolbox": "latest",
     "addons-linter": "^1.9.2"
   },
-  "license": "ISC"
+  "license": "LGPL3.0"
 }

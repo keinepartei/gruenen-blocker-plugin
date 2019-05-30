@@ -14,9 +14,9 @@
  * https://github.com/AlkoholLiga/afd-blocker-plugin/blob/master/app/scripts/blocker_tagesschau.js
  * commit 407bfdf532aec1d11caa3eae5da30c4d3cb5f7b6.
  */
-console.log("#### NO PARTY CONTENT-BLOCKER ####");
+console.log("Call content blocker.");
 
-import { Blocker } from "./blocker_general";
+import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
@@ -45,5 +45,4 @@ let blocker = new Blocker([
     },
 ]);
 
-blocker.modifyContent([document]);
-blocker.watchPageForMutations();
+require("./run_blocker").run(blocker);
