@@ -41,6 +41,8 @@ function storeOptions(e) {
  * @returns null.
  */
 function restoreOptions() {
+	console.log("Restore options: ");
+	// Load properties and populate control elements.
 	let properties = browser.storage.sync.get();
 	properties.then(setValues, (result) => { 
 		console.error("Could not restore options: " + result);
@@ -48,14 +50,14 @@ function restoreOptions() {
 }
 
 /**
- * Populates the options with the properties.
+ * Populates the control elements with the user properties.
  * 
  * @param properties
- *            the properties (storage).
+ *            the user properties (storage).
  * @returns null.
  */
 function setValues(properties) {
-	console.log("Load options: " + properties);
+	console.log("Load options: " + JSON.stringify(properties));
 	document.getElementById('block_ALL_GREENS').checked = properties.block_ALL_GREENS;
 	document.getElementById('block_TRUMP').checked = properties.block_TRUMP;
 	document.getElementById('block_DE_SPD').checked = properties.block_DE_SPD;
@@ -64,7 +66,47 @@ function setValues(properties) {
 	document.getElementById('block_DE_CSU').checked = properties.block_DE_CSU;
 	document.getElementById('block_DE_FDP').checked = properties.block_DE_FDP;
 	document.getElementById('block_DE_DIE_PARTEI').checked = properties.block_DE_DIE_PARTEI;
+	// AfD blocker functionality is not implemented.
+}
+
+/**
+ * Populates the fields labels with the I18N messages.
+ * 
+ * @returns null.
+ */
+function setLabels() {
+	updateLabel("blockAllGreensName", "blockAllGreensName");
+	updateLabel("blockTrumpName", "blockTrumpName");
+	updateLabel("blockDeGrueneName", "blockDeGrueneName");
+	updateLabel("blockDeSpdName", "blockDeSpdName");
+	updateLabel("blockDeDieLinkeName", "blockDeDieLinkeName");
+	updateLabel("blockDeCduName", "blockDeCduName");
+	updateLabel("blockDeCsuName", "blockDeCsuName");
+	updateLabel("blockDeFdpName", "blockDeFdpName");
+	updateLabel("blockDeDieParteiName", "blockDeDieParteiName");
+	updateLabel("blockDeAfDName", "blockDeAfDName");
+	updateLabel("blockDeAfDNotice", "blockDeAfDNotice");
+	updateLabel("optionsTitle", "optionsTitle");
+	updateLabel("optionsHeader", "optionsHeader");
+	updateLabel("quickAccessName", "quickAccessName");
+	updateLabel("accessByCountryName", "accessByCountryName");
+	updateLabel("countryDeName", "countryDeName");
+}
+
+/**
+ * Populates a fields label (or elements.innerHTML) with the I18N message.
+ * 
+ * @param key
+ *            the I18N language key.
+ * @param id
+ *            the DOM element ID of the fields label.
+ * @returns null.
+ */
+function updateLabel(key, id) {
+	console.log("Set label: " + key + " - " + id);
+	document.getElementById(id).innerHTML = browser.i18n.getMessage(key);
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
+document.addEventListener('DOMContentLoaded', setLabels);
 document.getElementById('store').addEventListener('click', storeOptions);

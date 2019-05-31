@@ -14,5 +14,61 @@
 	"showConfirmation": {
 		"message": "You block the entire content of this website at our own request with our Bündnis90 / Die Grünen Content Blocker. We draw your attention to the fact that compulsory information of the side provider to imprint, data protection and liability can also be blocked. Click on 'Cancel' to leave this page or on 'OK' if you really want to stay on this page.",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
+	},
+	"blockAllGreensName": {
+		"message": "Greens of all countries",
+		"description": "Block the Greens of all countries."
+	},
+	"blockTrumpName": {
+		"message": "Trump",
+		"description": "Block all Trumps."
+	},
+	"blockDeGrueneName": {
+		"message": "Bündnis 90/Die Grünen (Die GRÜNEN)",
+		"description": "Block Bündnis 90/Die Grünen (Die GRÜNEN)."
+	},
+	"blockDeSpdName": {
+		"message": "Social Democratic Party of Germany (SPD)",
+		"description": "Block the Social Democratic Party of Germany (SPD)."
+	},
+	"blockDeDieLinkeName": {
+		"message": "The Left (DIE LINKE)",
+		"description": "Block The Left (DIE LINKE)."
+	},
+	"blockDeFdpName": {
+		"message": "Free Democratic Party (FPD)",
+		"description": "Block the Free Democratic Party (FPD)."
+	},
+	"blockDeCduName": {
+		"message": "Christian Democratic Union of Germany (CDU)",
+		"description": "Block the Christian Democratic Union of Germany (CDU)."
+	},
+	"blockDeCsuName": {
+		"message": "Christian Social Union in Bavaria (CSU)",
+		"description": "Block the Christian Social Union in Bavaria (CSU)."
+	},
+	"blockDeDieParteiName": {
+		"message": "Die PARTEI (winksmiley)",
+		"description": "Block Die PARTEI (winksmiley)."
+	},
+	"blockDeAfDName": {
+		"message": "Alternative for Germany (AfD)*",
+		"description": "Block Alternative for Germany.*"
+	},
+	"blockDeAfDNotice": {
+		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI.",
+		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI."
+	},
+	"optionsHeader": {
+		"message": "<b>SPD? CDU? Can you eat that?</b><br>With the Greens Blocker you determine which contents you want to read or watch!"
+	},
+	"quickAccessName": {
+		"message": "Quick access"
+	},
+	"accessByCountryName": {
+		"message": "Access by country"
+	},
+	"countryDeName": {
+		"message": "Germany (DE)*"
 	}
 }

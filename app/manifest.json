@@ -13,17 +13,17 @@
 	"permissions": [
 		"storage"
 	],
-	"applications": {
-  		"gecko": {
-    		"id": "keinepartei@ich.ms"
-  		}
-	},
 	"options_ui": {
 		"page": "options.html",
 		"chrome_style": true
 	},
 	"background": {
 		"scripts": ["background.js"]
+	},
+	"applications": {
+  		"gecko": {
+    	"id": "keinepartei@ich.ms"
+  		}
 	},
 	"content_scripts": [
 		{

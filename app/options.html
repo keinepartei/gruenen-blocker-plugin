@@ -1,108 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Test Extension Options</title>
+<title>Options</title>
 </head>
 <body>
-	<h1>Blockierliste</h1>
-	<p>Bestimmen Sie selbst, welche Inhalte Sie blockieren
-		m&ouml;chten?</p>
+	<h1 id="optionsTitle">Options</h1>
+	<p id="optionsHeader">SPD? Never heard about! With the Greens
+		Blocker you determine which contents you want to block.!</p>
 	<div>
 		<div>
-			<h2>Schnellzugriff</h2>
+			<h2 id="quickAccessName">Quick access</h2>
 			<ul>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_ALL_GREENS"
-							disabled="disabled"
-							checked="checked">
-						Gr&uuml;ne aller L&auml;nder
-					</label>
+					<label
+						id="blockAllGreensName"
+						for="block_ALL_GREENS"></label>
+					<input
+						type="checkbox"
+						id="block_ALL_GREENS"
+						disabled="disabled"
+						checked="checked">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_TRUMP">
-						Trump
-					</label>
+					<label
+						id="blockTrumpName"
+						for="block_TRUMP"></label>
+					<input
+						type="checkbox"
+						id="block_TRUMP">
 				</li>
 			</ul>
 		</div>
 		<div>
-			<h2>Nach Land und Partei</h2>
-			<h3>Deutschland (DE)</h3>
+			<h2 id="accessByCountryName">Access by country</h2>
+			<h3 id="countryDeName">Germany (DE)</h3>
 			<ul>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_GRUENE"
-							disabled="disabled"
-							checked="checked">
-						B&uuml;ndnis 90/Die Gr&uuml;nen
-					</label>
+					<label
+						id="blockDeGrueneName"
+						for="block_DE_GRUENE"></label>
+					<input
+						type="checkbox"
+						id="block_DE_GRUENE"
+						checked="checked">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_AFD"
-							disabled="disabled">
-						AfD
-					</label>
+					<label
+						id="blockDeSpdName"
+						for="block_DE_SPD"></label>
+					<input
+						type="checkbox"
+						id="block_DE_SPD">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_SPD">
-						SPD
-					</label>
+					<label
+						id="blockDeDieLinkeName"
+						for="block_DE_DIE_LINKE"></label>
+					<input
+						type="checkbox"
+						id="block_DE_DIE_LINKE">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_DIE_LINKE">
-						Die Linke
-					</label>
+					<label
+						id="blockDeCduName"
+						for="block_DE_CDU"></label>
+					<input
+						type="checkbox"
+						id="block_DE_CDU">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_CDU">
-						CDU
-					</label>
+					<label
+						id="blockDeCsuName"
+						for="block_DE_CSU"></label>
+					<input
+						type="checkbox"
+						id="block_DE_CSU">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_CSU">
-						CSU
-					</label>
+					<label
+						id="blockDeFdpName"
+						for="block_DE_FDP"></label>
+					<input
+						type="checkbox"
+						id="block_DE_FDP">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_FDP">
-						FDP
-					</label>
+					<label
+						id="blockDeDieParteiName"
+						for="block_DE_DIE_PARTEI"></label>
+					<input
+						type="checkbox"
+						id="block_DE_DIE_PARTEI">
 				</li>
 				<li>
-					<label>
-						<input
-							type="checkbox"
-							id="block_DE_DIE_PARTEI">
-						Die PARTEI (Zwinkersmiley)
-					</label>
+					<label
+						id="blockDeAfDName"
+						for="block_DE_AFD"></label>
+					<input
+						type="checkbox"
+						id="block_DE_AFD"
+						disabled="disabled">
 				</li>
 			</ul>
+			<p>
+				<small
+					id="blockDeAfDNotice"
+					style="color: #999"></small>
+			</p>
 		</div>
 	</div>
 	<div id="stored"></div>

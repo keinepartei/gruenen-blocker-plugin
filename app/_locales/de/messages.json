@@ -14,5 +14,61 @@
 	"showConfirmation": {
 		"message": "Sie blockieren den gesamten Inhalt dieser Website auf eigenen Wunsch mit unserem Bündnis90/Die Grünen Content Blocker. Wir machen Sie darauf aufmerksam, dass Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung ebenfalls blockiert werden können. Klicken Sie deshalb auf 'Abbrechen', um diese Seite zu verlassen, oder auf 'OK', wenn Sie wirklich auf dieser Seite bleiben wollen.",
 		"description": "Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung können ebenfalls blockiert sein. Besser schnell weg!"
+	},
+	"blockAllGreensName": {
+		"message": "Grüne aller Länder",
+		"description": "Blockiere die Grünen aus allen Ländern."
+	},
+	"blockTrumpName": {
+		"message": "Trump",
+		"description": "Blockiere alle Trumps."
+	},
+	"blockDeGrueneName": {
+		"message": "Bündnis 90/Die Grünen (Die GRÜNEN)",
+		"description": "Blockiere Bündnis 90/Die Grünen (Die GRÜNEN)."
+	},
+	"blockDeSpdName": {
+		"message": "Sozialdemokratische Partei Deutschlands (SPD)",
+		"description": "Blockiere die Sozialdemokratische Partei Deutschlands (SPD)."
+	},
+	"blockDeDieLinkeName": {
+		"message": "Die Linke (DIE LINKE)",
+		"description": "Blockiere Die Linke (DIE LINKE)."
+	},
+	"blockDeFdpName": {
+		"message": "Freie Demokratische Partei (FPD)",
+		"description": "Blockiere die Freie Demokratische Partei (FPD)."
+	},
+	"blockDeCduName": {
+		"message": "Christlich Demokratische Union Deutschlands (CDU)",
+		"description": "Blockiere die Christlich Demokratische Union Deutschlands (CDU)."
+	},
+	"blockDeCsuName": {
+		"message": "Christlich-Soziale Union in Bayern (CSU)",
+		"description": "Blockiere die Christlich-Soziale Union in Bayern (CSU)."
+	},
+	"blockDeDieParteiName": {
+		"message": "Die PARTEI (Zwinkersmiley)",
+		"description": "Blockiere Die PARTEI (Zwinkersmiley)."
+	},
+	"blockDeAfDName": {
+		"message": "Alternative für Deutschland (AfD)*",
+		"description": "Blockiere Alternative für Deutschland.*"
+	},
+	"blockDeAfDNotice": {
+		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei die PARTEI.",
+		"description": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei die PARTEI."
+	},
+	"optionsHeader": {
+		"message": "SPD? CDU? Kann man das essen?<br>Mit dem Grünen Blocker von keiner Partei legen Sie selbst fest, welche Inhalte Sie im Internet sehen möchten!"
+	},
+	"quickAccessName": {
+		"message": "Schnellzugriff"
+	},
+	"accessByCountryName": {
+		"message": "Auswahl nach Land"
+	},
+	"countryDeName": {
+		"message": "Deutschland (DE)"
 	}
 }
