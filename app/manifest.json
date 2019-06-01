@@ -20,11 +20,6 @@
 	"background": {
 		"scripts": ["background.js"]
 	},
-	"applications": {
-  		"gecko": {
-    	"id": "keinepartei@ich.ms"
-  		}
-	},
 	"content_scripts": [
 		{
 			"matches": [

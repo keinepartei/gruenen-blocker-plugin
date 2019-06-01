@@ -59,8 +59,11 @@
 		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI.",
 		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI."
 	},
+	"optionsTitle": {
+		"message": "SPD? CDU? Can you eat that?"
+	},
 	"optionsHeader": {
-		"message": "<b>SPD? CDU? Can you eat that?</b><br>With the Greens Blocker you determine which contents you want to read or watch!"
+		"message": "With the Greens Blocker you determine which contents you want to read or watch!"
 	},
 	"quickAccessName": {
 		"message": "Quick access"

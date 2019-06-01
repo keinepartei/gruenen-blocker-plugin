@@ -56,11 +56,14 @@
 		"description": "Blockiere Alternative für Deutschland.*"
 	},
 	"blockDeAfDNotice": {
-		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei die PARTEI.",
-		"description": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei die PARTEI."
+		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI.",
+		"description": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI."
+	},
+	"optionsTitle": {
+		"message": "SPD? CDU? Kann man das essen?"
 	},
 	"optionsHeader": {
-		"message": "SPD? CDU? Kann man das essen?<br>Mit dem Grünen Blocker von keiner Partei legen Sie selbst fest, welche Inhalte Sie im Internet sehen möchten!"
+		"message": "Mit dem Grünen Blocker von keiner Partei legen Sie selbst fest, welche Inhalte Sie im Internet sehen möchten!"
 	},
 	"quickAccessName": {
 		"message": "Schnellzugriff"
