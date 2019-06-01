@@ -273,6 +273,17 @@
 		},
 		{
 			"matches": [
+				"*://*.zeit.de/*"
+			],
+			"js": [
+				"scripts/blocker_zeit.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
 				"*://gruene.berlin/*",
 				"*://*.gruene.de/*",
 				"*://*.gruene.li/*",
