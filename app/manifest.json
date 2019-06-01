@@ -18,7 +18,9 @@
 		"chrome_style": true
 	},
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": [
+			"background.js"
+		]
 	},
 	"applications": {
   		"gecko": {
@@ -98,6 +100,17 @@
 			],
 			"js": [
 				"scripts/blocker_hna.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
+				"*://*.instagram.com/*"
+			],
+			"js": [
+				"scripts/blocker_instagram.js"
 			],
 			"css": [
 				"css/overlay.css"
