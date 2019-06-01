@@ -20,11 +20,18 @@ Verwenden Sie den Grünen Blocker von keiner Partei. Er ist viel besser als der 
 - [Chrome Extension](https://chrome.google.com/webstore/detail/gruenen-content-blocker-from/[TODO])
 - [Firefox Add-on](https://addons.mozilla.org/de/firefox/addon/gruenen-content-blocker/)
 
-## Install
+## Installation
 
 Install [Node.js](https://nodejs.org/en/) and run:
 
 	$ npm install
+
+## Production
+
+	 npm run build chrome
+    npm run build firefox
+    npm run build opera
+    npm run build edge
 
 ## Development
 
@@ -35,17 +42,49 @@ Install [Node.js](https://nodejs.org/en/) and run:
 
 ## Getting started
 
+### Add a custom blocker
+
 The basic functionality is implemented in `app/scripts/blocker.js`
 
 Each site has its own blocker within `app/scripts`.
-Try to copy one and build an additional blocker for another news website.
+
+Copy a blocker script and try to implement an additional blocker for your desired site. Invoke the blocker class procedures with its run script `app/scripts/run_blocker.js`. See sample `app/scripts/blocker_sueddeutsche.js`:
+
+		console.log("Call content blocker.");
+		
+		import { Blocker } from "./blocker";
+		
+		let blocker = new Blocker([
+		    {
+		        selector: 'li.element',
+		        type: 'big'
+		    },
+		    {
+		        selector: '.sz-teaserlist-element',
+		        type: 'big'
+		    },
+		    {
+		        selector: 'li.newsscannermodule__item',
+		        type: 'small'
+		    },
+		    {
+		        selector: 'article',
+		        type: 'big'
+		    },
+		    {
+		        selector: 'div.entrylist__entry',
+		        type: 'big'
+		    },
+		]);
+		
+		require("./run_blocker").run(blocker);
 
 The blocker has to be activated in `app/manifest.json`:
 
       "content_scripts": [
         {
           "matches": [
-            "*://www.sueddeutsche.de/*"
+            "*://*.sueddeutsche.de/*"
           ],
           "js": [
             "scripts/blocker_sueddeutsche.js"
@@ -57,9 +96,9 @@ The blocker has to be activated in `app/manifest.json`:
         ...
       ]
 
-Invoke the blocker class procedures with its run script `app/scripts/run_blocker.js`:
+### Add new contents to be blocked
 
-		require("./run_blocker").run(blocker);
+tbd.
 
 ## Build
 
@@ -67,6 +106,10 @@ Invoke the blocker class procedures with its run script `app/scripts/run_blocker
     npm run build firefox
     npm run build opera
     npm run build edge
+
+### Fixes
+
+tbd.
 
 ## Environment
 

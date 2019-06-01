@@ -8,6 +8,26 @@
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
  */
 
+const labels = [ 
+	"blockAllGreensName", 
+	"blockGretaThunbergName",
+	"blockTrumpName",
+	"blockDeGrueneName",
+	"blockDeSpdName",
+	"blockDeDieLinkeName",
+	"blockDeCduName",
+	"blockDeCsuName",
+	"blockDeFdpName",
+	"blockDeDieParteiName",
+	"blockDeAfDName",
+	"blockDeAfDNotice",
+	"optionsTitle",
+	"optionsHeader",
+	"quickAccessName",
+	"accessByCountryName",
+	"countryDeName" 
+];
+
 /**
  * Stores all options.
  * 
@@ -19,6 +39,7 @@ function storeOptions(e) {
 	console.log("Store options: " + e);
 	browser.storage.sync.set({
 		block_ALL_GREENS : document.getElementById('block_ALL_GREENS').checked,
+		block_GRETA_THUNBERG : document.getElementById('block_GRETA_THUNBERG').checked,
 		block_TRUMP : document.getElementById('block_TRUMP').checked,
 		block_DE_SPD : document.getElementById('block_DE_SPD').checked,
 		block_DE_DIE_LINKE : document.getElementById('block_DE_DIE_LINKE').checked,
@@ -59,6 +80,7 @@ function restoreOptions() {
 function setValues(properties) {
 	console.log("Load options: " + JSON.stringify(properties));
 	document.getElementById('block_ALL_GREENS').checked = properties.block_ALL_GREENS;
+	document.getElementById('block_GRETA_THUNBERG').checked = properties.block_GRETA_THUNBERG;
 	document.getElementById('block_TRUMP').checked = properties.block_TRUMP;
 	document.getElementById('block_DE_SPD').checked = properties.block_DE_SPD;
 	document.getElementById('block_DE_DIE_LINKE').checked = properties.block_DE_DIE_LINKE;
@@ -70,47 +92,22 @@ function setValues(properties) {
 }
 
 /**
- * Populates the fields labels with the I18N messages.
- * 
- * @returns null.
- */
-function setLabels() {
-	updateLabel("blockAllGreensName", "blockAllGreensName");
-	updateLabel("blockTrumpName", "blockTrumpName");
-	updateLabel("blockDeGrueneName", "blockDeGrueneName");
-	updateLabel("blockDeSpdName", "blockDeSpdName");
-	updateLabel("blockDeDieLinkeName", "blockDeDieLinkeName");
-	updateLabel("blockDeCduName", "blockDeCduName");
-	updateLabel("blockDeCsuName", "blockDeCsuName");
-	updateLabel("blockDeFdpName", "blockDeFdpName");
-	updateLabel("blockDeDieParteiName", "blockDeDieParteiName");
-	updateLabel("blockDeAfDName", "blockDeAfDName");
-	updateLabel("blockDeAfDNotice", "blockDeAfDNotice");
-	updateLabel("optionsTitle", "optionsTitle");
-	updateLabel("optionsHeader", "optionsHeader");
-	updateLabel("quickAccessName", "quickAccessName");
-	updateLabel("accessByCountryName", "accessByCountryName");
-	updateLabel("countryDeName", "countryDeName");
-}
-
-/**
  * Populates a fields label (or elements.innerHTML) with the I18N message.
  * 
- * @param key
- *            the I18N language key.
  * @param id
- *            the DOM element ID of the fields label.
+ *            the DOM element ID (= I18N language key) of the fields label.
  * @returns null.
  */
-function updateLabel(key, id) {
-	console.log("Set label: " + key + " - " + id);
+function updateLabel(id) {
+	var label = browser.i18n.getMessage(id);
 	var node = document.getElementById(id);
+	console.log("Update label: " + node + ": " + label);
 	while (node.hasChildNodes()) {
 	    node.removeChild(node.firstChild);
 	}
-	document.getElementById(id).append( browser.i18n.getMessage(key));
+	document.getElementById(id).append(label);
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
-document.addEventListener('DOMContentLoaded', setLabels);
+document.addEventListener('DOMContentLoaded', labels.forEach(updateLabel));
 document.getElementById('store').addEventListener('click', storeOptions);

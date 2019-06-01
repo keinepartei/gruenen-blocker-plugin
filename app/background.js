@@ -47,6 +47,10 @@ function updateXPathExpression() {
 			s += " or contains(text(),'POTUS') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'trump')";
 			console.log("Block Trump!");
 		}
+		if (result.block_GRETA_THUNBERG) {
+			s += " or contains(text(),'Greta T.') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'greta thunberg')";
+			console.log("Block Trump!");
+		}
 		if (result.block_DE_SPD) {
 			s += " or contains(text(),'SPD') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'sozialdemokr')";
 			console.log("Block SPD contents as well.");

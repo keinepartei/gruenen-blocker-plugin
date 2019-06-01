@@ -19,6 +19,10 @@
 		"message": "Greens of all countries",
 		"description": "Block the Greens of all countries."
 	},
+	"blockGretaThunbergName": {
+		"message": "Greta Thunberg",
+		"description": "Block Greta Thunberg."
+	},
 	"blockTrumpName": {
 		"message": "Trump",
 		"description": "Block all Trumps."
