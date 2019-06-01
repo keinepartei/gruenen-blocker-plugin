@@ -8,6 +8,10 @@
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
  */
 
+/**
+ * Array of I18M labels to update after loading page (I18N key MUST be the same
+ * as the DOM element ID).
+ */
 const labels = [ 
 	"blockAllGreensName", 
 	"blockGretaThunbergName",

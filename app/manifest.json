@@ -130,6 +130,17 @@
 		},
 		{
 			"matches": [
+				"*://*.n-tv.de/*"
+			],
+			"js": [
+				"scripts/blocker_n-tv.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
 				"*://*.nordbayern.de/*"
 			],
 			"js": [
