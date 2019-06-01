@@ -185,6 +185,17 @@
 		},
 		{
 			"matches": [
+				"*://*.stern.de/*"
+			],
+			"js": [
+				"scripts/blocker_stern.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
 				"*://*.stuttgarter-zeitung.de/*"
 			],
 			"js": [

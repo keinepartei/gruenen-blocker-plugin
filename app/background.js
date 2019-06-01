@@ -49,7 +49,7 @@ function updateXPathExpression() {
 		}
 		if (result.block_GRETA_THUNBERG) {
 			s += " or contains(text(),'Greta T.') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'greta thunberg')";
-			console.log("Block Trump!");
+			console.log("Block Greta Thunberg!");
 		}
 		if (result.block_DE_SPD) {
 			s += " or contains(text(),'SPD') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'sozialdemokr')";
@@ -67,7 +67,7 @@ function updateXPathExpression() {
 		}
 		if (result.block_DE_CDU) {
 			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'cdu')";
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'christlich demokratisch union')";
+			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'christlich demokratische union')";
 			console.log("Block CDU contents as well.");
 		}
 		if (result.block_DE_CSU) {
