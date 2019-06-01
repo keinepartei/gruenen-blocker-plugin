@@ -104,7 +104,11 @@ function setLabels() {
  */
 function updateLabel(key, id) {
 	console.log("Set label: " + key + " - " + id);
-	document.getElementById(id).innerHTML = browser.i18n.getMessage(key);
+	var node = document.getElementById(id);
+	while (node.hasChildNodes()) {
+	    node.removeChild(node.firstChild);
+	}
+	document.getElementById(id).append( browser.i18n.getMessage(key));
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
