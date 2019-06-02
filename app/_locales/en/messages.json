@@ -23,6 +23,10 @@
 		"message": "Greta Thunberg",
 		"description": "Block Greta Thunberg."
 	},
+	"blockMerkelName": {
+		"message": "Merkel",
+		"description": "Blockiere Angela Merkel."
+	},
 	"blockTrumpName": {
 		"message": "Trump",
 		"description": "Block all Trumps."
@@ -60,8 +64,7 @@
 		"description": "Block Alternative for Germany.*"
 	},
 	"blockDeAfDNotice": {
-		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI.",
-		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI."
+		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI. Alternatively you can block Die PARTEI. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
 	},
 	"optionsTitle": {
 		"message": "SPD? CDU? Can you eat that?"

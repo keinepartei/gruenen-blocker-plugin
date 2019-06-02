@@ -2,122 +2,150 @@
 <html>
 <head>
 <title>Options</title>
+<style type="text/css">
+BODY>DIV {
+	border: dotted 1px #999;
+	border-radius: 5px;
+	margin: 5px 0px;
+	padding: 0px 0px;
+}
+
+BODY>DIV H1, BODY>DIV H2, BODY>DIV H3, BODY>DIV P {
+	margin: 5px;
+}
+
+BODY>DIV H3 {
+	margin-left: 10px;
+}
+</style>
 </head>
 <body>
-	<h1 id="optionsTitle">SPD? CDU? Can you eat that?</h1>
-	<p id="optionsHeader">With the Greens Blocker you determine which
-		contents you want to read or watch!</p>
+	<div>
+		<h1 id="optionsTitle">SPD? CDU? Can you eat that?</h1>
+		<p id="optionsHeader">With the Greens Blocker you determine which
+			contents you want to read or watch!</p>
+	</div>
 	<div>
 		<div>
 			<h2 id="quickAccessName">Quick access</h2>
 			<ul>
 				<li>
-					<label
-						id="blockAllGreensName"
-						for="block_ALL_GREENS"></label>
 					<input
 						type="checkbox"
 						id="block_ALL_GREENS"
 						disabled="disabled"
 						checked="checked">
+					<label
+						id="blockAllGreensName"
+						for="block_ALL_GREENS"></label>
 				</li>
 				<li>
-					<label
-						id="blockGretaThunbergName"
-						for="block_GRETA_THUNBERG"></label>
 					<input
 						type="checkbox"
 						id="block_GRETA_THUNBERG">
+					<label
+						id="blockGretaThunbergName"
+						for="block_GRETA_THUNBERG"></label>
 				</li>
 				<li>
+					<input
+						type="checkbox"
+						id="block_MERKEL">
 					<label
-						id="blockTrumpName"
-						for="block_TRUMP"></label>
+						id="blockMerkelName"
+						for="block_MERKEL"></label>
+				</li>
+				<li>
 					<input
 						type="checkbox"
 						id="block_TRUMP">
+					<label
+						id="blockTrumpName"
+						for="block_TRUMP"></label>
 				</li>
 			</ul>
 		</div>
+	</div>
+	<div>
 		<div>
 			<h2 id="accessByCountryName">Access by country</h2>
 			<h3 id="countryDeName">Germany (DE)</h3>
 			<ul>
 				<li>
-					<label
-						id="blockDeGrueneName"
-						for="block_DE_GRUENE"></label>
 					<input
 						type="checkbox"
 						id="block_DE_GRUENE"
 						checked="checked">
+					<label
+						id="blockDeGrueneName"
+						for="block_DE_GRUENE"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeSpdName"
-						for="block_DE_SPD"></label>
 					<input
 						type="checkbox"
 						id="block_DE_SPD">
+					<label
+						id="blockDeSpdName"
+						for="block_DE_SPD"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeDieLinkeName"
-						for="block_DE_DIE_LINKE"></label>
 					<input
 						type="checkbox"
 						id="block_DE_DIE_LINKE">
+					<label
+						id="blockDeDieLinkeName"
+						for="block_DE_DIE_LINKE"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeCduName"
-						for="block_DE_CDU"></label>
 					<input
 						type="checkbox"
 						id="block_DE_CDU">
+					<label
+						id="blockDeCduName"
+						for="block_DE_CDU"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeCsuName"
-						for="block_DE_CSU"></label>
 					<input
 						type="checkbox"
 						id="block_DE_CSU">
+					<label
+						id="blockDeCsuName"
+						for="block_DE_CSU"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeFdpName"
-						for="block_DE_FDP"></label>
 					<input
 						type="checkbox"
 						id="block_DE_FDP">
+					<label
+						id="blockDeFdpName"
+						for="block_DE_FDP"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeDieParteiName"
-						for="block_DE_DIE_PARTEI"></label>
 					<input
 						type="checkbox"
 						id="block_DE_DIE_PARTEI">
+					<label
+						id="blockDeDieParteiName"
+						for="block_DE_DIE_PARTEI"></label>
 				</li>
 				<li>
-					<label
-						id="blockDeAfDName"
-						for="block_DE_AFD"></label>
 					<input
 						type="checkbox"
 						id="block_DE_AFD"
 						disabled="disabled">
+					<label
+						id="blockDeAfDName"
+						for="block_DE_AFD"></label>
 				</li>
 			</ul>
-			<p>
+			<p style="line-height: 1em;">
 				<small
 					id="blockDeAfDNotice"
 					style="color: #999"></small>
 			</p>
 		</div>
 	</div>
-	<div id="stored"></div>
+	<p id="stored"></p>
 	<button id="store">Save</button>
 	<script src="options.js"></script>
 </body>

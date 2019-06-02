@@ -3,11 +3,13 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.0.4",
+	"version": "0.0.7",
 	"author": "Keine Partei",
 	"default_locale": "en",
 	"icons": {
 		"16": "images/icon-16.png",
+		"48": "images/icon-48.png",
+		"96": "images/icon-96.png",
 		"128": "images/icon-128.png"
 	},
 	"permissions": [

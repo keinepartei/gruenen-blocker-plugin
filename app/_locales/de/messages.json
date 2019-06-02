@@ -23,6 +23,10 @@
 		"message": "Greta Thunberg",
 		"description": "Blockiere Greta Thunberg."
 	},
+	"blockMerkelName": {
+		"message": "Merkel",
+		"description": "Blockiere Angela Merkel."
+	},
 	"blockTrumpName": {
 		"message": "Trump",
 		"description": "Blockiere alle Trumps."
@@ -60,8 +64,7 @@
 		"description": "Blockiere Alternative für Deutschland.*"
 	},
 	"blockDeAfDNotice": {
-		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI.",
-		"description": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI."
+		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI. Alternativ können Sie auch Inhalte von die Partei Die PARTEI blockieren. Denn ungeachtet der Schreibweise filtert das System alle Inhalte mit 'die partei', wodurch auch der eine odere andere Inhalt der AfD blockiert würde."
 	},
 	"optionsTitle": {
 		"message": "SPD? CDU? Kann man das essen?"
