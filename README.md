@@ -7,13 +7,26 @@
 An alle, die das Internet zu einem besseren Ort machen möchten oder einfach nur genervt sind.
 Nehmt euch unseren Grünen Blocker vor und macht ihn noch größer, noch kompatibler und noch besser.
 
-Der Grünen Blocker blockiert Inhalte von Bündnis 90/Die Grünen und Konsorten zuverlässig.
+Der Grünen Blocker **blockiert Inhalte von Bündnis 90/Die Grünen und Konsorten** zuverlässig.
 
 Neu!
 
 Optional blockiert der Grünen Blocker auch Inhalte anderer Parteien - SPD, Die Linke, FDP, usw.
 
-Verwenden Sie den Grünen Blocker von keiner Partei. Er ist viel besser als der ([AfD-Blocker von der Partei Die PARTEI](https://github.com/dieparteidiepartei/afd-blocker-plugin)).
+Verwenden Sie den Grünen Blocker von keiner Partei. Er ist viel besser als der [AfD-Blocker](https://github.com/dieparteidiepartei/afd-blocker-plugin) von der Partei Die PARTEI.
+
+## Features
+
+- verfügbar für FireFox und Google Chrome,
+- verfügbar in verschiedenen Sprachen (derzeit Deutsch und Englisch),
+- blockiert Inhalte von Bündnis 90/Die Grünen,
+- blockiert optional Inhalte von anderen Parteien bspw. SPD, Die Linke, CDU, CSU, FDP ...,
+- funktioniert mit so gut wie allen bekannten Social Media Portalen, Suchmaschinen und Nachrichten-Seiten und vielen weiteren:
+
+
+- Facebook, Instagram, Twitter und Youtube.
+- DuckDuckGo, Startpage und Qwant.
+- Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF und der Zeit.
 
 ## Download
 
@@ -28,7 +41,7 @@ Install [Node.js](https://nodejs.org/en/) and run:
 
 ## Production
 
-	 npm run build chrome
+    npm run build chrome
     npm run build firefox
     npm run build opera
     npm run build edge

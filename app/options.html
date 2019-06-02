@@ -17,6 +17,9 @@ BODY>DIV H1, BODY>DIV H2, BODY>DIV H3, BODY>DIV P {
 BODY>DIV H3 {
 	margin-left: 10px;
 }
+LABEL.disabled {
+	color: #888;
+}
 </style>
 </head>
 <body>
@@ -75,9 +78,11 @@ BODY>DIV H3 {
 					<input
 						type="checkbox"
 						id="block_DE_GRUENE"
+						disabled="disabled"
 						checked="checked">
 					<label
 						id="blockDeGrueneName"
+						class="disabled"
 						for="block_DE_GRUENE"></label>
 				</li>
 				<li>
@@ -135,6 +140,7 @@ BODY>DIV H3 {
 						disabled="disabled">
 					<label
 						id="blockDeAfDName"
+						class="disabled"
 						for="block_DE_AFD"></label>
 				</li>
 			</ul>

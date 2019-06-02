@@ -21,7 +21,7 @@
  */
 const overlayHTML = `
     <div class="nopartycontentblockedoverlay">
-        <div class="nopartycontentblockedoverlay_top">#Gr&uuml;nen Blocker</div>
+        <div class="nopartycontentblockedoverlay_top"><b>#Gr&uuml;nen Blocker</b></div>
         <div class="nopartycontentblockedoverlay_bottom">
             100% B&uuml;ndnis 90/Die Grünen inhaltsfrei.<br>
             Für Sie blockiert von keiner Partei!<br>
@@ -36,7 +36,7 @@ const overlayHTML = `
  */
 const overlayHTMLSmall = `
     <div class="nopartycontentblockedoverlay">
-        <div class="nopartycontentblockedoverlay_top">#Gr&uuml;nen Blocker</div>
+        <div class="nopartycontentblockedoverlay_top"><b>#Gr&uuml;nen Blocker</b></div>
     </div>
 `;
 
@@ -51,6 +51,8 @@ function parseHtml(html) {
     const parser = new DOMParser();
     const parsed = parser.parseFromString(html, 'text/html');
     const overlay = parsed.getElementsByClassName('nopartycontentblockedoverlay')[0];
+    var bg = browser.runtime.getURL("images/bg.png");
+    overlay.style = 'background: repeat url("' + bg + '") #fff';
     return overlay;
 }
 

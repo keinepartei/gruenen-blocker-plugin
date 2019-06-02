@@ -3,7 +3,7 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.0.7",
+	"version": "0.1.0",
 	"author": "Keine Partei",
 	"default_locale": "en",
 	"icons": {
@@ -12,9 +12,18 @@
 		"96": "images/icon-96.png",
 		"128": "images/icon-128.png"
 	},
-	"permissions": [
-		"storage"
+	"web_accessible_resources": [
+		"images/bg.png"
 	],
+	"permissions": [
+		"storage",
+		"activeTab"
+	],
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "images/icon-96.png",
+		"default_title": "Grünen Blocker"
+	},
 	"options_ui": {
 		"page": "options.html",
 		"chrome_style": true
@@ -25,9 +34,9 @@
 		]
 	},
 	"applications": {
-  		"gecko": {
-    	"id": "keinepartei@ich.ms"
-  		}
+		"gecko": {
+			"id": "keinepartei@ich.ms"
+		}
 	},
 	"content_scripts": [
 		{
