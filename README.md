@@ -20,18 +20,15 @@ Verwenden Sie den Grünen Blocker von keiner Partei. Er ist viel besser als der 
 - verfügbar für FireFox und Google Chrome,
 - verfügbar in verschiedenen Sprachen (derzeit Deutsch und Englisch),
 - blockiert Inhalte von Bündnis 90/Die Grünen,
-- blockiert optional Inhalte von anderen Parteien bspw. SPD, Die Linke, CDU, CSU, FDP ...,
-- funktioniert mit so gut wie allen bekannten Social Media Portalen, Suchmaschinen und Nachrichten-Seiten und vielen weiteren:
+- blockiert optional Inhalte von anderen Parteien bspw. SPD, Die Linke, CDU, CSU, FDP, usw.,
+- funktioniert mit so gut wie allen bekannten Social Media Portalen, Suchmaschinen und Nachrichten-Seiten:
 
-
-- Facebook, Instagram, Twitter und Youtube.
-- DuckDuckGo, Startpage und Qwant.
-- Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF und der Zeit.
+Facebook, Instagram, Twitter und Youtube. DuckDuckGo, Startpage und Qwant. Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF und der Zeit, und vielen weiteren.
 
 ## Download
 
-- [Chrome Extension](https://chrome.google.com/webstore/detail/gruenen-content-blocker-from/[TODO])
-- [Firefox Add-on](https://addons.mozilla.org/de/firefox/addon/gruenen-content-blocker/)
+- [Chrome Extension](https://chrome.google.com/webstore/detail/gr%C3%BCnen-blocker/hhpcjimcpbbihmamgphcafoeohhblmpo)
+- [Firefox Add-on](https://addons.mozilla.org/de/firefox/addon/gr%C3%BCnen-content-blocker/)
 
 ## Installation
 
