@@ -3,27 +3,34 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.1.0",
+	"version": "0.1.1",
+	"__chrome|opera__version_name": "0.1.1 beta",
+	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
+	"__firefox|opera__developer": {
+		"name": "kagal",
+		"url": "https://github.com/keinepartei/gruenen-blocker-plugin"
+	},
 	"default_locale": "en",
+	"permissions": [
+		"storage",
+		"activeTab"
+	],
 	"icons": {
 		"16": "images/icon-16.png",
 		"48": "images/icon-48.png",
 		"96": "images/icon-96.png",
 		"128": "images/icon-128.png"
 	},
+	"__chrome|opera__offline_enabled": true,
 	"web_accessible_resources": [
 		"images/bg.png"
 	],
-	"permissions": [
-		"storage",
-		"activeTab"
-	],
 	"browser_action": {
-		"browser_style": true,
 		"default_icon": "images/icon-96.png",
 		"default_title": "Grünen Blocker"
 	},
+	"__chrome|opera|edge__options_page": "options.html",
 	"options_ui": {
 		"page": "options.html",
 		"chrome_style": true
@@ -31,9 +38,10 @@
 	"background": {
 		"scripts": [
 			"background.js"
-		]
+		],
+		"persistent": true
 	},
-	"applications": {
+	"__firefox__applications": {
 		"gecko": {
 			"id": "keinepartei@ich.ms"
 		}
