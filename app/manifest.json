@@ -32,6 +32,7 @@
 	"__chrome|opera|edge__options_page": "options.html",
 	"options_ui": {
 		"page": "options.html",
+		"open_in_tab": true,
 		"chrome_style": true
 	},
 	"background": {
@@ -40,7 +41,7 @@
 		],
 		"persistent": true
 	},
-	"__firefox__applications": {
+	"applications": {
 		"gecko": {
 			"id": "keinepartei@ich.ms"
 		}

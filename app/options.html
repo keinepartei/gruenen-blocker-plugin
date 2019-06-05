@@ -5,6 +5,12 @@
 <meta
 	content="text/html; charset=UTF-8"
 	http-equiv="Content-Type">
+<script src="/lib/jquery-3.4.1.min.js"></script>
+<script src="/lib/bootstrap.min.js"></script>
+<link
+	href="/css/bootstrap.min.css"
+	type="text/css"
+	rel="stylesheet">
 <style type="text/css">
 BODY>DIV {
 	border: dotted 1px #999;
@@ -27,132 +33,212 @@ LABEL.disabled {
 </style>
 </head>
 <body>
-	<div>
-		<h1 id="optionsTitle">SPD? CDU? Can you eat that?</h1>
-		<p id="optionsHeader">With the Greens Blocker you determine which
-			contents you want to read or watch!</p>
-	</div>
-	<div>
-		<div>
-			<h2 id="quickAccessName">Quick access</h2>
-			<ul>
-				<li>
-					<input
-						type="checkbox"
-						id="block_ALL_GREENS"
-						disabled="disabled"
-						checked="checked">
-					<label
-						id="blockAllGreensName"
-						for="block_ALL_GREENS"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_GRETA_THUNBERG">
-					<label
-						id="blockGretaThunbergName"
-						for="block_GRETA_THUNBERG"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_MERKEL">
-					<label
-						id="blockMerkelName"
-						for="block_MERKEL"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_TRUMP">
-					<label
-						id="blockTrumpName"
-						for="block_TRUMP"></label>
-				</li>
-			</ul>
+	<nav>
+		<div
+			class="nav nav-tabs nav-fill"
+			id="nav-tab"
+			role="tablist">
+			<a
+				class="nav-item nav-link active"
+				id="nav-general-tab"
+				data-toggle="tab"
+				href="#nav-general"
+				role="tab"
+				aria-controls="nav-general"
+				aria-selected="true">General</a> <a
+				class="nav-item nav-link"
+				id="nav-appearance-tab"
+				data-toggle="tab"
+				href="#nav-appearance"
+				role="tab"
+				aria-controls="nav-appearance"
+				aria-selected="false">Appearance</a> <a
+				class="nav-item nav-link"
+				id="nav-content-filter-tab"
+				data-toggle="tab"
+				href="#nav-content-filter"
+				role="tab"
+				aria-controls="nav-content-filter"
+				aria-selected="false">Content Filter</a>
 		</div>
-	</div>
-	<div>
-		<div>
-			<h2 id="accessByCountryName">Access by country</h2>
-			<h3 id="countryDeName">Germany (DE)</h3>
-			<ul>
-				<li>
+	</nav>
+	<div
+		class="tab-content py-3 px-3 px-sm-0"
+		id="nav-tabContent">
+		<div
+			class="tab-pane fade show active"
+			id="nav-general"
+			role="tabpanel"
+			aria-labelledby="nav-general-tab"></div>
+		<div
+			class="tab-pane fade"
+			id="nav-appearance"
+			role="tabpanel"
+			aria-labelledby="nav-appearance-tab">
+			<div>
+				<div class="form-group">
 					<input
-						type="checkbox"
-						id="block_DE_GRUENE"
-						disabled="disabled"
-						checked="checked">
+						type="radio"
+						name="overlay_mode"
+						id="overlay_filtered_content">
 					<label
-						id="blockDeGrueneName"
-						class="disabled"
-						for="block_DE_GRUENE"></label>
-				</li>
-				<li>
+						id="optionsOverlayFileredContentName"
+						for="overlay_filtered_content"></label>
+				</div>
+				<div class="form-group">
 					<input
-						type="checkbox"
-						id="block_DE_SPD">
+						type="file"
+						id="overlay_background">
 					<label
-						id="blockDeSpdName"
-						for="block_DE_SPD"></label>
-				</li>
-				<li>
+						id="optionsOverlayBackgroundName"
+						for="overlay_background"></label>
+				</div>
+			</div>
+			<div>
+				<div class="form-group">
 					<input
-						type="checkbox"
-						id="block_DE_DIE_LINKE">
+						type="radio"
+						name="overlay_mode"
+						id="hide_filtered_content">
 					<label
-						id="blockDeDieLinkeName"
-						for="block_DE_DIE_LINKE"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_DE_CDU">
-					<label
-						id="blockDeCduName"
-						for="block_DE_CDU"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_DE_CSU">
-					<label
-						id="blockDeCsuName"
-						for="block_DE_CSU"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_DE_FDP">
-					<label
-						id="blockDeFdpName"
-						for="block_DE_FDP"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_DE_DIE_PARTEI">
-					<label
-						id="blockDeDieParteiName"
-						for="block_DE_DIE_PARTEI"></label>
-				</li>
-				<li>
-					<input
-						type="checkbox"
-						id="block_DE_AFD"
-						disabled="disabled">
-					<label
-						id="blockDeAfDName"
-						class="disabled"
-						for="block_DE_AFD"></label>
-				</li>
-			</ul>
-			<p style="line-height: 1em;">
-				<small
-					id="blockDeAfDNotice"
-					style="color: #999"></small>
-			</p>
+						id="optionsHideFileredContentName"
+						for="hide_filtered_content"></label>
+				</div>
+			</div>
+		</div>
+		<div
+			class="tab-pane fade"
+			id="nav-content-filter"
+			role="tabpanel"
+			aria-labelledby="nav-content-filter-tab">
+			<div>
+				<h1 id="optionsTitle">SPD? CDU? Can you eat that?</h1>
+				<p id="optionsHeader">With the Greens Blocker you determine
+					which contents you want to read or watch!</p>
+			</div>
+			<div>
+				<div class="form-group">
+					<h2 id="quickAccessName">Quick access</h2>
+					<ul>
+						<li>
+							<input
+								type="checkbox"
+								id="block_ALL_GREENS"
+								disabled="disabled"
+								checked="checked">
+							<label
+								id="blockAllGreensName"
+								for="block_ALL_GREENS"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_GRETA_THUNBERG">
+							<label
+								id="blockGretaThunbergName"
+								for="block_GRETA_THUNBERG"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_MERKEL">
+							<label
+								id="blockMerkelName"
+								for="block_MERKEL"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_TRUMP">
+							<label
+								id="blockTrumpName"
+								for="block_TRUMP"></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div class="form-group">
+					<h2 id="accessByCountryName">Access by country</h2>
+					<h3 id="countryDeName">Germany (DE)</h3>
+					<ul>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_GRUENE"
+								disabled="disabled"
+								checked="checked">
+							<label
+								id="blockDeGrueneName"
+								class="disabled"
+								for="block_DE_GRUENE"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_SPD">
+							<label
+								id="blockDeSpdName"
+								for="block_DE_SPD"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_DIE_LINKE">
+							<label
+								id="blockDeDieLinkeName"
+								for="block_DE_DIE_LINKE"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_CDU">
+							<label
+								id="blockDeCduName"
+								for="block_DE_CDU"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_CSU">
+							<label
+								id="blockDeCsuName"
+								for="block_DE_CSU"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_FDP">
+							<label
+								id="blockDeFdpName"
+								for="block_DE_FDP"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_DIE_PARTEI">
+							<label
+								id="blockDeDieParteiName"
+								for="block_DE_DIE_PARTEI"></label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								id="block_DE_AFD"
+								disabled="disabled">
+							<label
+								id="blockDeAfDName"
+								class="disabled"
+								for="block_DE_AFD"></label>
+						</li>
+					</ul>
+					<p style="line-height: 1em;">
+						<small
+							id="blockDeAfDNotice"
+							style="color: #999"></small>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<p id="stored"></p>

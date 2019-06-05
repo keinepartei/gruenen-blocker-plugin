@@ -15,6 +15,24 @@
 		"message": "You block the entire content of this website at our own request with our Bündnis90 / Die Grünen Content Blocker. We draw your attention to the fact that compulsory information of the side provider to imprint, data protection and liability can also be blocked. Click on 'Cancel' to leave this page or on 'OK' if you really want to stay on this page.",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
 	},
+	"optionsTabGeneralName": {
+		"message": "Generel"
+	},
+	"optionsTabAppearanceName": {
+		"message": "Appearance"
+	},
+	"optionsTabContentFilterName": {
+		"message": "Content Filter"
+	},
+	"optionsOverlayFileredContentName": {
+		"message": "Overlay filtered content"
+	},
+	"optionsHideFileredContentName": {
+		"message": "Hide or Remove filtered content"
+	},
+	"optionsOverlayBackgroundName": {
+		"message": "Overlay background"
+	},
 	"blockAllGreensName": {
 		"message": "Greens of all countries",
 		"description": "Block the Greens of all countries."

@@ -13,6 +13,9 @@
  * as the DOM element ID).
  */
 const labels = [ 
+	"optionsOverlayFileredContentName",
+	"optionsHideFileredContentName",
+	"optionsOverlayBackgroundName",
 	"blockAllGreensName", 
 	"blockGretaThunbergName",
 	"blockMerkelName",
@@ -42,7 +45,29 @@ const labels = [
  */
 function storeOptions(e) {
 	console.log("Store options: " + e);
+	
+	const blob = document.getElementById('overlay_background').files[0];
+	if (blob) {
+		var reader = new FileReader();
+		 reader.readAsDataURL(blob); 
+		 reader.onloadend = function() {
+		     base64data = reader.result;
+		     console.log(base64data);
+		     browser.storage.local.set({
+		    	 "overlay_background" : base64data,
+		     }).then( (result) => {
+		    	 console.log("Stored background image: ")
+		 	});
+		     
+		 }
+	}
+	
+	let overlay_mode = 0;
+	if (document.getElementById('hide_filtered_content').checked) {
+		overlay_mode = 1;
+	}
 	let properties = {
+		overlay_mode : overlay_mode,  	
 		block_ALL_GREENS : document.getElementById('block_ALL_GREENS').checked,
 		block_GRETA_THUNBERG : document.getElementById('block_GRETA_THUNBERG').checked,
 		block_MERKEL : document.getElementById('block_MERKEL').checked,
@@ -58,6 +83,7 @@ function storeOptions(e) {
 		require("./search").update(properties);
 	});
 	e.preventDefault();
+
 	var status = document.getElementById('stored');
 	status.textContent = 'Options stored.';
 	setTimeout(function() {
@@ -87,7 +113,12 @@ function restoreOptions() {
  * @returns null.
  */
 function setValues(properties) {
-	console.log("Load options: " + JSON.stringify(properties));
+	console.log("Load options: " + JSON.stringify(properties));	
+	if (properties.overlay_mode == 1) {
+		document.getElementById('hide_filtered_content').checked = true;
+	} else {
+		document.getElementById('overlay_filtered_content').checked = true;
+	}
 	document.getElementById('block_ALL_GREENS').checked = properties.block_ALL_GREENS;
 	document.getElementById('block_GRETA_THUNBERG').checked = properties.block_GRETA_THUNBERG;
 	document.getElementById('block_MERKEL').checked = properties.block_MERKEL;
@@ -118,6 +149,21 @@ function updateLabel(id) {
 	document.getElementById(id).append(label);
 }
 
+function updateNode(id, nodeId) {
+	var label = browser.i18n.getMessage(id);
+	var node = document.getElementById(nodeId);
+	console.log("Update label: " + node + ": " + label);
+	while (node.hasChildNodes()) {
+	    node.removeChild(node.firstChild);
+	}
+	document.getElementById(nodeId).append(label);
+}
+
 document.addEventListener('DOMContentLoaded', restoreOptions);
-document.addEventListener('DOMContentLoaded', labels.forEach(updateLabel));
+document.addEventListener('DOMContentLoaded', function() { 
+	labels.forEach(updateLabel);
+	updateNode("optionsTabGeneralName", "nav-general-tab");
+	updateNode("optionsTabAppearanceName", "nav-appearance-tab");
+	updateNode("optionsTabContentFilterName", "nav-content-filter-tab");
+});
 document.getElementById('store').addEventListener('click', storeOptions);

@@ -10,8 +10,11 @@
  */
 module.exports = {
 	run: function(blocker) {
-		browser.storage.local.get(['searchExpression']).then((result) => {
+		browser.storage.local.get(['searchExpression', 'overlay_background']).then((result) => {
 			blocker.xpathExpression = result.searchExpression;
+			if (result.overlay_background) {
+				blocker.updateOverlayBackground(result.overlay_background);
+			}
 		    blocker.modifyContent([document.body]);
 		    blocker.watchPageForMutations();
 		}, (error) => {
