@@ -54,7 +54,7 @@ function storeOptions(e) {
 		block_DE_CSU : document.getElementById('block_DE_CSU').checked,
 		block_DE_DIE_PARTEI : document.getElementById('block_DE_DIE_PARTEI').checked,
 	};
-	browser.storage.sync.set(properties).then( (result) => {
+	browser.storage.local.set(properties).then( (result) => {
 		require("./search").update(properties);
 	});
 	e.preventDefault();
@@ -73,7 +73,7 @@ function storeOptions(e) {
 function restoreOptions() {
 	console.log("Restore options: ");
 	// Load properties and populate control elements.
-	let properties = browser.storage.sync.get();
+	let properties = browser.storage.local.get();
 	properties.then(setValues, (result) => { 
 		console.error("Could not restore options: " + result);
 	});

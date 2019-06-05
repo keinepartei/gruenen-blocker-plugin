@@ -10,7 +10,7 @@
  */
 module.exports = {
 	run: function(blocker) {
-		browser.storage.sync.get(['searchExpression']).then((result) => {
+		browser.storage.local.get(['searchExpression']).then((result) => {
 			blocker.xpathExpression = result.searchExpression;
 		    blocker.modifyContent([document]);
 		    blocker.watchPageForMutations();

@@ -7,7 +7,7 @@
  * (see: https://www.gnu.org/licenses/lgpl-3.0.en.html) and see LICENSE
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
  */
-browser.storage.sync.get().then( require("./search").update,
+browser.storage.local.get().then( require("./search").update,
 	(error) => { 
 		console.error("Initialize searchExpression failed!");
 });

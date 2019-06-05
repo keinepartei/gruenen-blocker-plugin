@@ -54,7 +54,7 @@ module.exports = {
 			console.log("Block Die PARTEI contents as well.");
 		}
 		s += postfix;
-		browser.storage.sync.set({
+		browser.storage.local.set({
 			searchExpression : s
 		}).then((result) => {
 			console.log("Updated searchExpression: '" + s + "'.");

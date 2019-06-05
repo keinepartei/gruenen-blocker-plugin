@@ -12,10 +12,7 @@
 		"url": "https://github.com/keinepartei/gruenen-blocker-plugin"
 	},
 	"default_locale": "en",
-	"__chrome|firefox|edge__permissions": [
-		"storage"
-	],
-	"__opera__optional_permissions": [
+	"permissions": [
 		"storage"
 	],
 	"icons": {
