@@ -12,7 +12,7 @@ module.exports = {
 	run: function(blocker) {
 		browser.storage.local.get(['searchExpression']).then((result) => {
 			blocker.xpathExpression = result.searchExpression;
-		    blocker.modifyContent([document]);
+		    blocker.modifyContent([document.body]);
 		    blocker.watchPageForMutations();
 		}, (error) => {
 			console.error("Could not initialize: " + error);

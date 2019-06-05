@@ -110,7 +110,7 @@ export class Blocker {
             try {
                 let node = iterator.iterateNext();
                 while (node) {
-                    console.log("Found content to be blocked.");
+                    console.log("Found content to be blocked: " + node);
                     for(let i = 0; i< this.selectorList.length; i++)
                     {
                         let selector = this.selectorList[i].selector;
@@ -126,6 +126,8 @@ export class Blocker {
                             }
                             // Wrapper found
                             break;
+                        } else {
+                        	console.log("Found but not matched: ");
                         }
                     }
                     node = iterator.iterateNext();

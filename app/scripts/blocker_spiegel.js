@@ -46,6 +46,10 @@ let blocker = new Blocker([
     {
         selector: '.ui-tabs-panel',
         type: 'big'
+    },
+    {
+        selector: 'li.slider_item',
+        type: 'big'
     }
 ]);
 

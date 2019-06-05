@@ -10,50 +10,55 @@
 module.exports = {
 	update: function(properties) {
 		console.log("Try to update search expression.");
-		let prefix = ".//*[contains(text(),'B90') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'Bündnis 90') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'gruene') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'grüne')";
-		let postfix = "]";
-		let s = prefix;
+		let s = ".//*[contains(.,'B90')";
+		s += lowerCase('bündnis 90');
+		s += lowerCase('b&uuml;ndnis 90');
+		s += lowerCase('grüne');
+		s += lowerCase('gr&uuml;ne');
 		if (properties.block_TRUMP) {
-			s += " or contains(text(),'POTUS') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'trump')";
+			s += " or contains(.,'POTUS')";
+			s += lowerCase('trump');
 			console.log("Block Trump!");
 		}
 		if (properties.block_GRETA_THUNBERG) {
-			s += " or contains(text(),'Greta T.') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'greta thunberg')";
+			s += " or contains(.,'Greta T.')";
+			s += lowerCase('greta thunberg');
 			console.log("Block Greta Thunberg!");
 		}
 		if (properties.block_MERKEL) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'merkel')";
+			s += lowerCase('merkel');
 			console.log("Block Angela Merkel!");
 		}
 		if (properties.block_DE_SPD) {
-			s += " or contains(text(),'SPD') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'sozialdemokr')";
+			s += " or contains(.,'SPD')";
+			s += lowerCase('sozialdemokr');
 			console.log("Block SPD contents as well.");
 		}
 		if (properties.block_DE_DIE_LINKE) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'die linke')";
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'linke partei')";
-			s += " or contains(text(),'PDS') or contains(text(),'SED') ";
+			s += " or contains(.,'PDS') or contains(.,'SED') ";
+			s += lowerCase('die linke');
+			s += lowerCase('linke partei');
 			console.log("Block Die Linke contents as well.");
 		}
 		if (properties.block_DE_FDP) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'fdp')";
+			s += " or contains(.,'FDP')";
 			console.log("Block FDP contents as well.");
 		}
 		if (properties.block_DE_CDU) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'cdu')";
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'christlich demokratische union')";
+			s += " or contains(.,'CDU')";
+			s += lowerCase('christlich demokratische union');
 			console.log("Block CDU contents as well.");
 		}
 		if (properties.block_DE_CSU) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'csu')";
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'christlich soziale union')";
+			s += " or contains(.,'CSU')";
+			s += lowerCase('christlich soziale union');
 			console.log("Block CSU contents as well.");
 		}
 		if (properties.block_DE_DIE_PARTEI) {
-			s += " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'die partei')"; // Zwinkersmiley
+			s += lowerCase('die partei'); // Zwinkersmiley
 			console.log("Block Die PARTEI contents as well.");
 		}
-		s += postfix;
+		s += "]";
 		browser.storage.local.set({
 			searchExpression : s
 		}).then((result) => {
@@ -63,3 +68,7 @@ module.exports = {
 		});
 	}
 };
+
+function lowerCase(string) {
+	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ', 'abcdefghijklmnopqrstuvwxyzäöü'),'" + string + "')";
+}
