@@ -186,11 +186,6 @@ export class Blocker {
     }
 }
 
-// Blocker.prototype.sayHi = function() {
-// var htmlOverlay = "";
-// alert('HI HI HI ');
-// };
-
 /**
  * Add overlays to a list of node configurations
  * 
