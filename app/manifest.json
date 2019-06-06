@@ -3,8 +3,8 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.2.1",
-	"__chrome|opera__version_name": "0.2.1 beta",
+	"version": "0.2.2",
+	"__chrome|opera__version_name": "0.2.2 beta",
 	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
 	"__firefox|opera__developer": {
@@ -274,6 +274,19 @@
 			],
 			"js": [
 				"scripts/blocker_twitter.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
+				"*://*.yandex.com/*",
+				"*://*.yandex.com.tr/*",
+				"*://*.yandex.ru/*"
+			],
+			"js": [
+				"scripts/blocker_yandex.js"
 			],
 			"css": [
 				"css/overlay.css"

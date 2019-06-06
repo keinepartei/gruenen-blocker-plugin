@@ -65,6 +65,7 @@ module.exports = {
 		}
 		if (properties.block_TR_AKP) {
 			s += " or contains(.,'AKP')";
+			s += " or contains(.,'AK Parti')";
 			console.log("Block AKP contents as well.");
 		}
 		if (properties.block_TR_CHP) {
