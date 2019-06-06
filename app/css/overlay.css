@@ -13,10 +13,11 @@
 
 .nopartycontentblockedoverlay {
 	font-family: Helvetica, Arial, sans-serif;
-	border: 2px solid black;
+	border: none;
 	background: white;
 	background-image: url("./images/bg.png");
   	background-repeat: repeat;
+  	overflow: hidden;
 	color: black;
 	padding: 5px;
 	box-sizing: border-box;
