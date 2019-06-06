@@ -4,7 +4,8 @@
  * Includes every langugage file in this or sub folders.
  *  
  * ./en/messages.json -> English language file.
- * ./de/messages.json -> German language file. 
+ * ./de/messages.json -> German language file.
+ * ./tr/messages.json -> Turkish language file.  
  *
  * Published under the GNU Lesser General Public License Version 3, 29 June 2007
  * (see: https://www.gnu.org/licenses/lgpl-3.0.en.html) and see LICENSE

@@ -1,22 +1,21 @@
 {
 	"appName": {
-		"message": "Grünen Blocker",
-		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
+		"message": "Greens Content Blocker",
+		"description": "Blocks contents about Alliance 90/The Greens and others."
 	},
 	"appShortName": {
-		"message": "Grünen Blocker",
-		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
+		"message": "Greens Blocker",
+		"description": "Blocks contents about Alliance 90/The Greens and others."
 	},
 	"appDescription": {
-		"message": "Grünen Content Blocker by No Party.",
-		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
+		"message": "Greens Blocker - Blocks contents about Alliance 90/The Greens and others."
 	},
 	"showConfirmation": {
 		"message": "You block the entire content of this website at our own request with our Bündnis90 / Die Grünen Content Blocker. We draw your attention to the fact that compulsory information of the side provider to imprint, data protection and liability can also be blocked. Click on 'Cancel' to leave this page or on 'OK' if you really want to stay on this page.",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
 	},
 	"optionsTabGeneralName": {
-		"message": "Generel"
+		"message": "General"
 	},
 	"optionsTabAppearanceName": {
 		"message": "Appearance"
@@ -35,7 +34,7 @@
 	},
 	"blockAllGreensName": {
 		"message": "Greens of all countries",
-		"description": "Block the Greens of all countries."
+		"description": "Block Greens of all countries."
 	},
 	"blockGretaThunbergName": {
 		"message": "Greta Thunberg",
@@ -43,15 +42,19 @@
 	},
 	"blockMerkelName": {
 		"message": "Merkel",
-		"description": "Blockiere Angela Merkel."
+		"description": "Block Angela Merkel."
+	},
+	"blockErdoganName": {
+		"message": "Erdoğan",
+		"description": "Block Recep Tayyip Erdoğan."
 	},
 	"blockTrumpName": {
 		"message": "Trump",
 		"description": "Block all Trumps."
 	},
 	"blockDeGrueneName": {
-		"message": "Bündnis 90/Die Grünen (Die GRÜNEN)",
-		"description": "Block Bündnis 90/Die Grünen (Die GRÜNEN)."
+		"message": "Alliance 90/The Greens (Die GRÜNEN)",
+		"description": "Block Alliance 90/The Greens (Die GRÜNEN)."
 	},
 	"blockDeSpdName": {
 		"message": "Social Democratic Party of Germany (SPD)",
@@ -75,20 +78,34 @@
 	},
 	"blockDeDieParteiName": {
 		"message": "Die PARTEI (winksmiley)",
-		"description": "Block Die PARTEI (winksmiley)."
+		"description": "Block Die PARTEI (wink smiley)."
 	},
 	"blockDeAfDName": {
 		"message": "Alternative for Germany (AfD)*",
 		"description": "Block Alternative for Germany.*"
 	},
 	"blockDeAfDNotice": {
-		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by die Partei Die PARTEI. Alternatively you can block Die PARTEI. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
+		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI itself. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
 	},
-	"optionsTitle": {
-		"message": "SPD? CDU? Can you eat that?"
+	"blockTrAkpName": {
+		"message": "Justice and Development Party (AKP)",
+		"description": "Block the Justice and Development Party (AKP)."
 	},
-	"optionsHeader": {
-		"message": "With the Greens Blocker you determine which contents you want to read or watch!"
+	"blockTrChpName": {
+		"message": "Republican People's Party (CHP)",
+		"description": "Block the Republican People's Party (CHP)."
+	},
+	"blockTrHdpName": {
+		"message": "Peoples' Democratic Party (HDP)",
+		"description": "Block the Peoples' Democratic Party (HDP)."
+	},
+	"blockTrMhpName": {
+		"message": "Nationalist Movement Party (MHP)",
+		"description": "Block the Nationalist Movement Party (MHP)."
+	},
+	"blockTrIyiName": {
+		"message": "İyi Party (IYI)",
+		"description": "Block the İyi Party (IYI)."
 	},
 	"quickAccessName": {
 		"message": "Quick access"
@@ -97,6 +114,9 @@
 		"message": "Access by country"
 	},
 	"countryDeName": {
-		"message": "Germany (DE)*"
+		"message": "Germany (DE)"
+	},
+	"countryTrName": {
+		"message": "Turkey (TR)"
 	}
 }

@@ -1,15 +1,14 @@
 {
 	"appName": {
-		"message": "Grünen Blocker",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
+		"message": "Grünen Content Blocker",
+		"description": "Blockiert Inhalte über Bündnis 90/Die Grünen und andere."
 	},
 	"appShortName": {
 		"message": "Grünen Blocker",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
+		"description": "Blockiert Inhalte über Bündnis 90/Die Grünen und andere."
 	},
 	"appDescription": {
-		"message": "Grünen Content Blocker von Keine Partei.",
-		"description": "Blockt Inhalte von Bündnis 90/Die Grünen und mehr."
+		"message": "Grünen Blocker - Blockt Inhalte über Bündnis 90/Die Grünen und andere."
 	},
 	"showConfirmation": {
 		"message": "Sie blockieren den gesamten Inhalt dieser Website auf eigenen Wunsch mit unserem Bündnis90/Die Grünen Content Blocker. Wir machen Sie darauf aufmerksam, dass Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung ebenfalls blockiert werden können. Klicken Sie deshalb auf 'Abbrechen', um diese Seite zu verlassen, oder auf 'OK', wenn Sie wirklich auf dieser Seite bleiben wollen.",
@@ -44,6 +43,10 @@
 	"blockMerkelName": {
 		"message": "Merkel",
 		"description": "Blockiere Angela Merkel."
+	},
+	"blockErdoganName": {
+		"message": "Erdoğan",
+		"description": "Block Recep Tayyip Erdoğan."
 	},
 	"blockTrumpName": {
 		"message": "Trump",
@@ -84,11 +87,25 @@
 	"blockDeAfDNotice": {
 		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI. Alternativ können Sie auch Inhalte von die Partei Die PARTEI blockieren. Denn ungeachtet der Schreibweise filtert das System alle Inhalte mit 'die partei', wodurch auch der eine odere andere Inhalt der AfD blockiert würde."
 	},
-	"optionsTitle": {
-		"message": "SPD? CDU? Kann man das essen?"
+	"blockTrAkpName": {
+		"message": "Partei für Gerechtigkeit und Aufschwung (AKP)",
+		"description": "Blockiere die Partei für Gerechtigkeit und Aufschwung (AKP)."
 	},
-	"optionsHeader": {
-		"message": "Mit dem Grünen Blocker von keiner Partei legen Sie selbst fest, welche Inhalte Sie im Internet sehen möchten!"
+	"blockTrChpName": {
+		"message": "Republikanische Volkspartei (CHP)",
+		"description": "Blockiere die Republikanische Volkspartei (CHP)."
+	},
+	"blockTrHdpName": {
+		"message": "Demokratische Partei der Völker (HDP)",
+		"description": "Blockiere die Demokratische Partei der Völker (HDP)."
+	},
+	"blockTrMhpName": {
+		"message": "Partei der Nationalistischen Bewegung (MHP)",
+		"description": "Blockiere die Partei der Nationalistischen Bewegung (MHP)."
+	},
+	"blockTrIyiName": {
+		"message": "Gute Partei (IYI)",
+		"description": "Blockiere die Gute Partei (IYI)."
 	},
 	"quickAccessName": {
 		"message": "Schnellzugriff"
@@ -98,5 +115,8 @@
 	},
 	"countryDeName": {
 		"message": "Deutschland (DE)"
+	},
+	"countryTrName": {
+		"message": "Türkei (TR)"
 	}
 }

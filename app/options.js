@@ -19,6 +19,7 @@ const labels = [
 	"blockAllGreensName", 
 	"blockGretaThunbergName",
 	"blockMerkelName",
+	"blockErdoganName",
 	"blockTrumpName",
 	"blockDeGrueneName",
 	"blockDeSpdName",
@@ -29,11 +30,15 @@ const labels = [
 	"blockDeDieParteiName",
 	"blockDeAfDName",
 	"blockDeAfDNotice",
-	"optionsTitle",
-	"optionsHeader",
+	"blockTrAkpName",
+	"blockTrChpName",
+	"blockTrHdpName",
+	"blockTrMhpName",
+	"blockTrIyiName",
 	"quickAccessName",
 	"accessByCountryName",
-	"countryDeName" 
+	"countryDeName",
+	"countryTrName"
 ];
 
 /**
@@ -67,10 +72,11 @@ function storeOptions(e) {
 		overlay_mode = 1;
 	}
 	let properties = {
-		overlay_mode : overlay_mode,  	
+		overlay_mode : overlay_mode,		
 		block_ALL_GREENS : document.getElementById('block_ALL_GREENS').checked,
 		block_GRETA_THUNBERG : document.getElementById('block_GRETA_THUNBERG').checked,
 		block_MERKEL : document.getElementById('block_MERKEL').checked,
+		block_ERDOGAN : document.getElementById('block_ERDOGAN').checked,
 		block_TRUMP : document.getElementById('block_TRUMP').checked,
 		block_DE_SPD : document.getElementById('block_DE_SPD').checked,
 		block_DE_DIE_LINKE : document.getElementById('block_DE_DIE_LINKE').checked,
@@ -78,6 +84,11 @@ function storeOptions(e) {
 		block_DE_CDU : document.getElementById('block_DE_CDU').checked,
 		block_DE_CSU : document.getElementById('block_DE_CSU').checked,
 		block_DE_DIE_PARTEI : document.getElementById('block_DE_DIE_PARTEI').checked,
+		block_TR_AKP : document.getElementById('block_TR_AKP').checked,
+		block_TR_CHP : document.getElementById('block_TR_CHP').checked,
+		block_TR_HDP : document.getElementById('block_TR_HDP').checked,
+		block_TR_MHP : document.getElementById('block_TR_MHP').checked,
+		block_TR_IYI : document.getElementById('block_TR_IYI').checked,
 	};
 	browser.storage.local.set(properties).then( (result) => {
 		require("./search").update(properties);
@@ -122,6 +133,7 @@ function setValues(properties) {
 	document.getElementById('block_ALL_GREENS').checked = properties.block_ALL_GREENS;
 	document.getElementById('block_GRETA_THUNBERG').checked = properties.block_GRETA_THUNBERG;
 	document.getElementById('block_MERKEL').checked = properties.block_MERKEL;
+	document.getElementById('block_ERDOGAN').checked = properties.block_ERDOGAN;
 	document.getElementById('block_TRUMP').checked = properties.block_TRUMP;
 	document.getElementById('block_DE_SPD').checked = properties.block_DE_SPD;
 	document.getElementById('block_DE_DIE_LINKE').checked = properties.block_DE_DIE_LINKE;
@@ -130,6 +142,11 @@ function setValues(properties) {
 	document.getElementById('block_DE_FDP').checked = properties.block_DE_FDP;
 	document.getElementById('block_DE_DIE_PARTEI').checked = properties.block_DE_DIE_PARTEI;
 	// AfD blocker functionality is not implemented.
+	document.getElementById('block_TR_AKP').checked = properties.block_TR_AKP;
+	document.getElementById('block_TR_CHP').checked = properties.block_TR_CHP;
+	document.getElementById('block_TR_HDP').checked = properties.block_TR_HDP;
+	document.getElementById('block_TR_MHP').checked = properties.block_TR_MHP;
+	document.getElementById('block_TR_IYI').checked = properties.block_TR_IYI;
 }
 
 /**

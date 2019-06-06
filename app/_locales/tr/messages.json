@@ -1,0 +1,134 @@
+{
+	"appName": {
+		"message": "Yeşil İçerik Engelleyici",
+		"description": "Blocks contents about Alliance 90/The Greens and others."
+	},
+	"appShortName": {
+		"message": "Yeşil engelleyici",
+		"description": "Blocks contents by Bündnis 90/Die Grünen and more."
+	},
+	"appDescription": {
+		"message": "Yeşil engelleyici - İçeriği Birlik 90/Yeşiller ve diğerleri.",
+		"description": "Greens Blocker - Blocks contents about Alliance 90/The Greens and others."
+	},
+	"showConfirmation": {
+		"message": "Bu web sitesinin içeriğinin tamamını Yeşiller Engelleyicimizle kendi isteğimiz üzerine engelliyorsunuz. Baskı, veri koruma ve sorumluluk engellenebilir. Bu sayfadan ayrılmak için 'İptal'i tıklayın ya da gerçekten bu sayfada kalmak istiyorsanız' Tamam'ı tıklayın.",
+		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
+	},
+	"optionsTabGeneralName": {
+		"message": "Genel",
+		"description": "General"
+	},
+	"optionsTabAppearanceName": {
+		"message": "Görünüm",
+		"description": "Appearance"
+	},
+	"optionsTabContentFilterName": {
+		"message": "İçerik filtresi",
+		"description": "Content Filter"
+	},
+	"optionsOverlayFileredContentName": {
+		"message": "Filtrelenmiş içerik yerleşimi",
+		"description": "Overlay filtered content"
+	},
+	"optionsHideFileredContentName": {
+		"message": "Filtrelenmiş içeriği gizle veya kaldır",
+		"description": "Hide or Remove filtered content"
+	},
+	"optionsOverlayBackgroundName": {
+		"message": "Bindirme arka plan",
+		"description": "Overlay background"
+	},
+	"blockAllGreensName": {
+		"message": "Tüm ülkelerin Yeşilleri",
+		"description": "Block Greens of all countries."
+	},
+	"blockGretaThunbergName": {
+		"message": "Greta Thunberg",
+		"description": "Block Greta Thunberg."
+	},
+	"blockMerkelName": {
+		"message": "Merkel",
+		"description": "Block Angela Merkel."
+	},
+	"blockErdoganName": {
+		"message": "Erdoğan",
+		"description": "Block Recep Tayyip Erdoğan."
+	},
+	"blockTrumpName": {
+		"message": "Trump",
+		"description": "Block all Trumps."
+	},
+	"blockDeGrueneName": {
+		"message": "Birlik 90/Yeşiller (Die GRÜNEN)",
+		"description": "Bündnis 90/Die Grünen (Die GRÜNEN)."
+	},
+	"blockDeSpdName": {
+		"message": "Almanya Sosyal Demokrat Partisi (SPD)",
+		"description": "Social Democratic Party of Germany (SPD)."
+	},
+	"blockDeDieLinkeName": {
+		"message": "Sol Parti (DIE LINKE)",
+		"description": "The Left (DIE LINKE)."
+	},
+	"blockDeFdpName": {
+		"message": "Hür Demokratik Parti (FPD)",
+		"description": "Free Democratic Party (FPD)."
+	},
+	"blockDeCduName": {
+		"message": "Hıristiyan Demokrat Birliği (CDU)",
+		"description": "Christian Democratic Union of Germany (CDU)."
+	},
+	"blockDeCsuName": {
+		"message": "Hıristiyan Sosyal Birliği (CSU)",
+		"description": "Christian Social Union in Bavaria (CSU)."
+	},
+	"blockDeDieParteiName": {
+		"message": "Parti (göz kırpmak gülen)",
+		"description": "Die PARTEI (wink smiley)."
+	},
+	"blockDeAfDName": {
+		"message": "Almanya için Alternatif (AfD)*",
+		"description": "Alternative for Germany (AfD)*"
+	},
+	"blockDeAfDNotice": {
+		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI itself. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well.",
+		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
+	},
+	"blockTrAkpName": {
+		"message": "Adalet ve Kalkınma Partisi (AKP)",
+		"description": "Block the Justice and Development Party (AKP)."
+	},
+	"blockTrChpName": {
+		"message": "Cumhuriyet Halk Partisi (CHP)",
+		"description": "Block the Republican People's Party (CHP)."
+	},
+	"blockTrHdpName": {
+		"message": "Halkların Demokratik Partisi (HDP)",
+		"description": "Block the Peoples' Democratic Party (HDP)."
+	},
+	"blockTrMhpName": {
+		"message": "Milliyetçi Hareket Partisi (MHP)",
+		"description": "Block the Nationalist Movement Party (MHP)."
+	},
+	"blockTrIyiName": {
+		"message": "İYİ Parti (IYI)",
+		"description": "Block the İyi Party (IYI)."
+	},
+	"quickAccessName": {
+		"message": "Hızlı erişim",
+		"description": "Quick access"
+	},
+	"accessByCountryName": {
+		"message": "Ülkeye göre erişim",
+		"description": "Access by country"
+	},
+	"countryDeName": {
+		"message": "Almanya (DE)",
+		"description": "Germany (DE)*"
+	},
+	"countryTrName": {
+		"message": "Türkiye (TR)",
+		"description": "Turkey (TR)"
+	}
+}

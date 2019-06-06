@@ -15,11 +15,6 @@ module.exports = {
 		s += lowerCase('b&uuml;ndnis 90');
 		s += lowerCase('grüne');
 		s += lowerCase('gr&uuml;ne');
-		if (properties.block_TRUMP) {
-			s += " or contains(.,'POTUS')";
-			s += lowerCase('trump');
-			console.log("Block Trump!");
-		}
 		if (properties.block_GRETA_THUNBERG) {
 			s += " or contains(.,'Greta T.')";
 			s += lowerCase('greta thunberg');
@@ -28,6 +23,16 @@ module.exports = {
 		if (properties.block_MERKEL) {
 			s += lowerCase('merkel');
 			console.log("Block Angela Merkel!");
+		}
+		if (properties.block_ERDOGAN) {
+			s += " or contains(.,'Erdoğan')";
+			s += lowerCase('recep tayyip erdo');
+			console.log("Block Erdoğan!");
+		}
+		if (properties.block_TRUMP) {
+			s += " or contains(.,'POTUS')";
+			s += lowerCase('trump');
+			console.log("Block Trump!");
 		}
 		if (properties.block_DE_SPD) {
 			s += " or contains(.,'SPD')";
@@ -57,6 +62,27 @@ module.exports = {
 		if (properties.block_DE_DIE_PARTEI) {
 			s += lowerCase('die partei'); // Zwinkersmiley
 			console.log("Block Die PARTEI contents as well.");
+		}
+		if (properties.block_TR_AKP) {
+			s += " or contains(.,'AKP')";
+			console.log("Block AKP contents as well.");
+		}
+		if (properties.block_TR_CHP) {
+			s += " or contains(.,'CHP')";
+			console.log("Block CHP contents as well.");
+		}
+		if (properties.block_TR_HDP) {
+			s += " or contains(.,'HDP')";
+			console.log("Block HDP contents as well.");
+		}
+		if (properties.block_TR_MHP) {
+			s += " or contains(.,'MHP')";
+			console.log("Block MHP contents as well.");
+		}
+		if (properties.block_TR_IYI) {
+			s += " or contains(.,'IYI')";
+			s += " or contains(.,'İYİ Parti')";
+			console.log("Block İYİ Parti contents as well.");
 		}
 		s += "]";
 		browser.storage.local.set({
