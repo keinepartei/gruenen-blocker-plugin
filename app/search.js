@@ -25,7 +25,8 @@ module.exports = {
 			console.log("Block Angela Merkel!");
 		}
 		if (properties.block_ERDOGAN) {
-			s += " or contains(.,'Erdoğan')";
+			s += lowerCase('erdogan');
+			s += lowerCase('erdoğan');
 			s += lowerCase('recep tayyip erdo');
 			console.log("Block Erdoğan!");
 		}
@@ -97,5 +98,5 @@ module.exports = {
 };
 
 function lowerCase(string) {
-	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ', 'abcdefghijklmnopqrstuvwxyzäöü'),'" + string + "')";
+	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞ', 'abcdefghijklmnopqrstuvwxyzäöüğ'),'" + string + "')";
 }

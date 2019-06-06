@@ -3,8 +3,8 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.2.2",
-	"__chrome|opera__version_name": "0.2.2 beta",
+	"version": "0.2.3",
+	"__chrome|opera__version_name": "0.2.3 beta",
 	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
 	"__firefox|opera__developer": {
@@ -130,6 +130,17 @@
 			],
 			"js": [
 				"scripts/blocker_instagram.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
+				"*://*.izlesene.com/*"
+			],
+			"js": [
+				"scripts/blocker_izlesene.js"
 			],
 			"css": [
 				"css/overlay.css"
