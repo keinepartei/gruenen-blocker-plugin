@@ -6,7 +6,13 @@
  * Published under the GNU Lesser General Public License Version 3, 29 June 2007
  * (see: https://www.gnu.org/licenses/lgpl-3.0.en.html) and see LICENSE
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
+ *
+ * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
+ * licensed under the ISC License by the Internet Systems Consortium
+ * (www.isc.org)
+ * https://github.com/dieparteidiepartei/afd-blocker-plugin/blob/master/app/css/morgenpost_fix.css
+ * commit 9df4166f4a98b8580ca3ca4f0d38afd0b6448486.
  */
-.nopartycontentblockedoverlay {
+.gb-cb-ol {
 	height: calc(100% - 16px);
 }

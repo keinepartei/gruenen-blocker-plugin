@@ -17,13 +17,26 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    { // Almost all.
-        selector: 'article.teaser',
-        type: 'big'
+    { // Teaser right.
+        selector: 'article.teaser--video',
+        type: 'big',
+        align: 'top',
+        imageHeight: '51.5%',
+        title: 'color: #be0028; font-size: 1.6rem; line-height: 1.2;',
+        txt: 'color: #000; font-size: 1.9rem; line-height: 1.2; font-weight: bold;'
+    },
+    { // Teaser inline.
+        selector: 'article.teaser--inline',
+        type: 'big',
+        align: 'left',
+        imageWidth: '33.333%',
+        title: 'color: #be0028; font-size: 1.6rem; line-height: 1.2;',
+        txt: 'color: #000; font-size: 2.0rem; line-height: 1.2; font-weight: bold;'
     },
     { // Section 'Meistgelesen'.
         selector: 'li.teaser',
-        type: 'small'
+        type: 'small',
+        title: 'font-size: 1.6rem; line-height: 1.2;',
     },
 ]);
 

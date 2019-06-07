@@ -10,6 +10,13 @@
 	"appDescription": {
 		"message": "Grünen Blocker - Blockt Inhalte über Bündnis 90/Die Grünen und andere."
 	},
+	"overlayTitle": {
+		"message": "Grünen Blocker"
+	},
+	"overlayTxt": {
+		"message": "100% Bündnis 90/Die Grünen inhaltsfrei.",
+		"description": "100% Alliance 90/The Greens content-free."
+	},
 	"showConfirmation": {
 		"message": "Sie blockieren den gesamten Inhalt dieser Website auf eigenen Wunsch mit unserem Bündnis90/Die Grünen Content Blocker. Wir machen Sie darauf aufmerksam, dass Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung ebenfalls blockiert werden können. Klicken Sie deshalb auf 'Abbrechen', um diese Seite zu verlassen, oder auf 'OK', wenn Sie wirklich auf dieser Seite bleiben wollen.",
 		"description": "Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung können ebenfalls blockiert sein. Besser schnell weg!"

@@ -6,12 +6,18 @@
  * Published under the GNU Lesser General Public License Version 3, 29 June 2007
  * (see: https://www.gnu.org/licenses/lgpl-3.0.en.html) and see LICENSE
  * (https://github.com/keinepartei/gruenen-blocker-plugin/LICENSE).
+ *
+ * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
+ * licensed under the ISC License by the Internet Systems Consortium
+ * (www.isc.org)
+ * https://github.com/dieparteidiepartei/afd-blocker-plugin/blob/master/app/css/overlay.css
+ * commit 01061dfe9404062b850b930fe30c150f294a2a31.
  */
-.nopartycontentblocked {
+.gb-cb {
 	position: relative !important;
 }
 
-.nopartycontentblockedoverlay {
+.gb-cb-ol {
 	font-family: Helvetica, Arial, sans-serif;
 	border: none;
 	background: white;
@@ -27,18 +33,27 @@
 	left: 0;
 	right: 0;
 	z-index: 99998;
-	text-align: right;
+	text-align: left;
 }
 
-.nopartycontentblockedoverlay_top, .nopartycontentblockedoverlay_bottom {
+.gb-cb-ol-top, .gb-cb-ol-bottom {
+	overflow: hidden;
 	position: absolute;
-	right: 5px;
+	right: 1px;
 }
 
-.nopartycontentblockedoverlay_bottom {
-	bottom: 5px;
+.gb-cb-ol-bottom {
+	bottom: 7px;
 }
 
-.nopartycontentblockedoverlay_top {
-	top: 5px;
+.gb-cb-ol-top {
+	top: 1px;
+}
+
+.gb-cb-ol-left .gb-cb-ol-top {
+	left: 1px;
+}
+.gb-cb-ol-left .gb-cb-ol-bottom {
+	top: 1px;
+	left: auto;
 }

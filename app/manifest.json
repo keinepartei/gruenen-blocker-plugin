@@ -3,8 +3,8 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.2.4",
-	"__chrome|opera__version_name": "0.2.4 beta",
+	"version": "0.2.5",
+	"__chrome|opera__version_name": "0.2.5 beta",
 	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
 	"__firefox|opera__developer": {

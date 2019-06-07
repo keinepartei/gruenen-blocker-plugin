@@ -11,6 +11,13 @@
 		"message": "Yeşil engelleyici - İçeriği Birlik 90/Yeşiller ve diğerleri.",
 		"description": "Greens Blocker - Blocks contents about Alliance 90/The Greens and others."
 	},
+	"overlayTitle": {
+		"message": "Yeşil engelleyici"
+	},
+	"overlayTxt": {
+		"message": "100% Birlik 90/Yeşiller içeriksiz.",
+		"description": "100% Alliance 90/The Greens content-free."
+	},
 	"showConfirmation": {
 		"message": "Bu web sitesinin içeriğinin tamamını Yeşiller Engelleyicimizle kendi isteğimiz üzerine engelliyorsunuz. Baskı, veri koruma ve sorumluluk engellenebilir. Bu sayfadan ayrılmak için 'İptal'i tıklayın ya da gerçekten bu sayfada kalmak istiyorsanız' Tamam'ı tıklayın.",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
