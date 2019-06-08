@@ -25,7 +25,6 @@ let blocker = new Blocker([
     },
     {
         selector: '.id-Article-kicker',
-        type: 'small'
     },
     {
         selector: '.id-Article-body',
@@ -33,11 +32,9 @@ let blocker = new Blocker([
     },
     {
         selector: '.id-Article-headline',
-        type: 'small'
     },
     {
         selector: '.id-Breadcrumb-element-link',
-        type: 'small'
     },
 ]);
 

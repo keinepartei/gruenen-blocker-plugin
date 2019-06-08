@@ -21,7 +21,6 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
     {
         selector: '.result',
-        type: 'small'
     },
     {
         selector: '.result_ribbon_knowledge',

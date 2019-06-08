@@ -19,19 +19,24 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-	{
+	{ // TODO: Test. It#s at the bottom of the page '...Zeitungen'.
         selector: '.box-head',
         type: 'big'
     },
-	{
-        selector: 'article',
-        type: 'big'
+	{ // Gets the smaller ones as well ...
+        selector: 'article.mod-teaser',
+        type: 'big',
+        align: 'top',
+        imageWidth: '100%',
+        imageHeight: '51.5%',
+        title: 'color: #918e83; font-size: 1.125rem; line-height: 1.375;font-weight: normal;',
+        txt: 'color: #454545; font-size: 1.5rem; line-height: 1.1; font-weight: bold;font-family: "Roboto Condensed",sans-serif;'
+        
     },
-    {
-        selector: '.mod-top-list',
-        type: 'big'
+    { // Right column 'Schlagzeilen'.
+        selector: '.mod-top-list li.cf',
     },
-    {
+    { // TODO: Not found in source.
         selector: '.mod-aside',
         type: 'big'
     }

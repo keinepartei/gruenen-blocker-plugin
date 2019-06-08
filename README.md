@@ -75,7 +75,6 @@ Copy a blocker script and try to implement an additional blocker for your desire
 		    },
 		    {
 		        selector: 'li.newsscannermodule__item',
-		        type: 'small'
 		    },
 		    {
 		        selector: 'article',

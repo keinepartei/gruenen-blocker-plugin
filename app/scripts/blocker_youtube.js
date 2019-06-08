@@ -42,7 +42,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'ytd-compact-video-renderer.style-scope',
-        type: 'small'
 
     },
 ]);

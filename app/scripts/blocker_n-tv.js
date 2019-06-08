@@ -30,12 +30,11 @@ let blocker = new Blocker([
         type: 'big',
         align: 'left',
         imageWidth: '33.333%',
-        title: 'color: #be0028; font-size: 1.6rem; line-height: 1.2;',
+        title: 'color: #be0028; font-size: 19px; line-height: 22.6px; font-weight: 700, font-family: Arial, Helvetica, sans-serif;', 
         txt: 'color: #000; font-size: 2.0rem; line-height: 1.2; font-weight: bold;'
     },
     { // Section 'Meistgelesen'.
         selector: 'li.teaser',
-        type: 'small',
         title: 'font-size: 1.6rem; line-height: 1.2;',
     },
 ]);

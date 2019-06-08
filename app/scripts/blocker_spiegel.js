@@ -19,9 +19,12 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    {
+    { // Inline teaser with image on left side.
         selector: 'div.teaser',
-        type: 'big'
+        type: 'big',
+        imageWidth: '42.5%',
+        title: 'color: black; font-size: 1.125rem; line-height: 1.2;',
+        txt: 'color: #900; font-size: 1.625rem; line-height: 1.2; font-weight: bold;'
     },
     {
         selector: '.search-teaser',
@@ -39,9 +42,13 @@ let blocker = new Blocker([
         selector: 'div.video-player',
         type: 'big'
     },
-    {
+    { // Assets/Teaser in right column.
         selector: 'div.asset-box',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '66.666%',
+        title: 'color: black; font-size: 1.0rem; line-height: 1.2; font-weight: 700;',
+        txt: 'color: #000; font-size: 1.0rem; line-height: 1.2;'
     },
     {
         selector: '.ui-tabs-panel',

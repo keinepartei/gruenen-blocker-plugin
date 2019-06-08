@@ -15,7 +15,6 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
     {
         selector: 'div.organic',
-        type: 'small'
     },
     {
     	// TODO: Fix image preview at the top of the page.
@@ -24,11 +23,9 @@ let blocker = new Blocker([
     },
     {
         selector: 'div.related',
-        type: 'small'
     },
     {
         selector: 'div.showcase__item_optimized_yes',
-        type: 'small'
     },
 ]);
 

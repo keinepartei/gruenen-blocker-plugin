@@ -19,12 +19,15 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
 	{ // Almost all.
         selector: 'div.o-teaser-article',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '56%',
+        title: 'color: #c00; font-size: 14px; line-height: 18px;font-weight: 700;font-family: SternMetric,Helvetica Neue,Helvetica,Arial,sans-serif;',
+        txt: 'color: #000; font-size: 16px; line-height: 20px; font-weight: 800;letter-spacing: -.2px;'
     },
     { // Section 'Top-Themen' at the top of the page. Broken! Only overlays
 		// the first match in the breadcrump list.
         selector: '.navigation-link',
-        type: 'small'
     },
 ]);
 

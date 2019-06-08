@@ -22,8 +22,8 @@
 	border: none;
 	background: white;
 	background-image: url("./images/bg.png");
-  	background-repeat: repeat;
-  	overflow: hidden;
+	background-repeat: repeat;
+	overflow: hidden;
 	color: black;
 	padding: 5px;
 	box-sizing: border-box;
@@ -36,24 +36,35 @@
 	text-align: left;
 }
 
-.gb-cb-ol-top, .gb-cb-ol-bottom {
+.gb-cb-ol-1, .gb-cb-ol-2 {
 	overflow: hidden;
 	position: absolute;
-	right: 1px;
 }
 
-.gb-cb-ol-bottom {
+.gb-cb-ol-2 {
 	bottom: 7px;
 }
 
-.gb-cb-ol-top {
+.gb-cb-ol-1 {
 	top: 1px;
 }
 
-.gb-cb-ol-left .gb-cb-ol-top {
+.gb-cb-ol-2 {
+	top: 1px;
+	padding-top: 10px;
+}
+
+.gb-cb-ol-top {
+	
+}
+
+.gb-cb-ol-left .gb-cb-ol-1 {
 	left: 1px;
 }
-.gb-cb-ol-left .gb-cb-ol-bottom {
+
+.gb-cb-ol-left .gb-cb-ol-2 {
 	top: 1px;
 	left: auto;
+	padding-top: 5px;
+	padding-left: 10px;
 }

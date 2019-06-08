@@ -26,11 +26,9 @@ let blocker = new Blocker([
     },
     {
         selector: '.search-result',
-        type: 'small'
     },
     {
         selector: '.search-item',
-        type: 'small'
     },
 
     /* www.qwant.com */

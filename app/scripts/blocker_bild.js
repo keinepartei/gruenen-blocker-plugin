@@ -21,7 +21,6 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([ 
     {
         selector: 'div.hentry.landscape',
-        type: 'small'
     },
     {
         selector: 'div.hentry',

@@ -15,15 +15,12 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
     {
         selector: '.module',
-        type: 'small'
     },
     {
         selector: '.result',
-        type: 'small'
     },
     {
         selector: '.results_links_deep',
-        type: 'small'
     },
 
 ]);

@@ -29,7 +29,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'li.newsscannermodule__item',
-        type: 'small'
     },
     {
         selector: 'article',

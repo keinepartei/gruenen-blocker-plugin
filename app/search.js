@@ -16,7 +16,7 @@ module.exports = {
 		s += lowerCase('grüne');
 		s += lowerCase('gr&uuml;ne');
 		if (properties.block_GRETA_THUNBERG) {
-			s += " or contains(.,'Greta T.')";
+			s += match([ 'Greta T.' ]);
 			s += lowerCase('greta thunberg');
 			console.log("Block Greta Thunberg!");
 		}
@@ -31,32 +31,32 @@ module.exports = {
 			console.log("Block Erdoğan!");
 		}
 		if (properties.block_TRUMP) {
-			s += " or contains(.,'POTUS')";
+			s += match([ 'POTUS' ]);
 			s += lowerCase('trump');
 			console.log("Block Trump!");
 		}
 		if (properties.block_DE_SPD) {
-			s += " or contains(.,'SPD')";
+			s += match([ 'SPD' ]);
 			s += lowerCase('sozialdemokr');
 			console.log("Block SPD contents as well.");
 		}
 		if (properties.block_DE_DIE_LINKE) {
-			s += " or contains(.,'PDS') or contains(.,'SED') ";
+			s += match([ 'PDS', 'SED' ]);
 			s += lowerCase('die linke');
 			s += lowerCase('linke partei');
 			console.log("Block Die Linke contents as well.");
 		}
 		if (properties.block_DE_FDP) {
-			s += " or contains(.,'FDP')";
+			s += match([ 'FDP' ]);
 			console.log("Block FDP contents as well.");
 		}
 		if (properties.block_DE_CDU) {
-			s += " or contains(.,'CDU')";
+			s += match([ 'CDU' ]);
 			s += lowerCase('christlich demokratische union');
 			console.log("Block CDU contents as well.");
 		}
 		if (properties.block_DE_CSU) {
-			s += " or contains(.,'CSU')";
+			s += match([ 'CSU' ]);
 			s += lowerCase('christlich soziale union');
 			console.log("Block CSU contents as well.");
 		}
@@ -65,25 +65,23 @@ module.exports = {
 			console.log("Block Die PARTEI contents as well.");
 		}
 		if (properties.block_TR_AKP) {
-			s += " or contains(.,'AKP')";
-			s += " or contains(.,'AK Parti')";
+			s += match([ 'AKP', 'AK Parti' ]);
 			console.log("Block AKP contents as well.");
 		}
 		if (properties.block_TR_CHP) {
-			s += " or contains(.,'CHP')";
+			s += match([ 'CHP' ]);
 			console.log("Block CHP contents as well.");
 		}
 		if (properties.block_TR_HDP) {
-			s += " or contains(.,'HDP')";
+			s += match([ 'HDP' ]);
 			console.log("Block HDP contents as well.");
 		}
 		if (properties.block_TR_MHP) {
-			s += " or contains(.,'MHP')";
+			s += match([ 'MHP' ]);
 			console.log("Block MHP contents as well.");
 		}
 		if (properties.block_TR_IYI) {
-			s += " or contains(.,'IYI')";
-			s += " or contains(.,'İYİ Parti')";
+			s += match([ 'IYI', 'İYİ Parti' ]);
 			console.log("Block İYİ Parti contents as well.");
 		}
 		s += "]";
@@ -98,5 +96,13 @@ module.exports = {
 };
 
 function lowerCase(string) {
-	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞ', 'abcdefghijklmnopqrstuvwxyzäöüğ'),'" + string + "')";
+	return  " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞ', 'abcdefghijklmnopqrstuvwxyzäöüğ'),'" + string + "')";
+}
+
+function match(strings) {
+	let r = "";
+	strings.forEach(function(s) {
+		r += " or contains(text(),'" + s + "')";
+	});
+	return r;
 }

@@ -32,7 +32,6 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
     {
         selector: '.search-item',
-        type: 'small'
     },
     {
         selector: '.topmodulXXL',
@@ -40,23 +39,18 @@ let blocker = new Blocker([
     },
     {
         selector: '.xxxlItem1',
-        type: 'small'
     },
     {
         selector: '.xxxlItem2',
-        type: 'small'
     },
     {
         selector: '.xxxlItem3',
-        type: 'small'
     },
     {
         selector: '.hp-kommentare',
-        type: 'small'
     },
     {
         selector: '.mediabox',
-        type: 'small'
     },
     {
         selector: '.article-content',

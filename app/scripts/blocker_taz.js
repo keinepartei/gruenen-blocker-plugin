@@ -29,7 +29,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'div.even.sect.sect_tags',
-        type: 'small'
     },
     {
         selector: '.objlink.report.article',
@@ -37,7 +36,6 @@ let blocker = new Blocker([
     },
     {
         selector: '.objlink.subjective.commentary.article',
-        type: 'small'
     },
     {
         selector: '.objlink.brief.legacy.article',

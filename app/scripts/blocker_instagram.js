@@ -24,7 +24,6 @@ const blocker = new Blocker([
     },
     {
         selector: `li[style="opacity: 1; width: 200px;"]`,
-        type: 'small'
     }
 ]);
 

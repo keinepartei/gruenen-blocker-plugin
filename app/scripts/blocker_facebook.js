@@ -21,7 +21,6 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
 	{
         selector: 'div._5pcb',
-        type: 'small'
     },
 	{
         selector: '._77we',
@@ -41,7 +40,6 @@ let blocker = new Blocker([
     },
     {
         selector: '#facebook _5pcr userContentWrapper',
-        type: 'small'
     }
 ]);
 

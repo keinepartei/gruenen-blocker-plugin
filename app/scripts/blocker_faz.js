@@ -19,9 +19,13 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    {
+    { // Vertical teaser in the middle.
         selector: 'div.o-Grid_Col',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '35.5%',
+        title: 'color: #666; font-size: 0.6875rem; line-height: 1.27273; font-weight: 400; font-family: FAZGoldSans-Regular,helvetica neue,helvetica,sans-serif;',
+        txt: 'color: #111; font-size: 1.25rem; line-height: 1.3; font-weight: 400; font-family: georgia,times,times new roman,serif;'
     },
     {
         selector: 'div.atc-Text',
@@ -29,7 +33,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'li.nvg-Breadcrumb_Item',
-        type: 'small'
     },
     {
         selector: 'div.Teaser620',
@@ -37,7 +40,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'div.gh-MainNav_Article',
-        type: 'small'
     },
     {
         selector: 'div.ctn-PlaceholderContent',

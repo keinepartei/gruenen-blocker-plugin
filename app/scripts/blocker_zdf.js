@@ -21,24 +21,24 @@ import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
     {
-        selector: 'article',
-        type: 'big'
+        selector: 'article.b-cluster-teaser',
+        type: 'big',
+        align: 'top',
+        imageHeight: '50%',
+        title: 'color: rgb(52, 57, 63); font-size: 15px; line-height: 18px; font-weight: 400; font-family: Helvetica-Neue, Arial, sans-serif;',
+        txt: 'color: rgb(52, 57, 63); font-size: 22px; line-height: 30px; font-weight: 700; font-family: Helvetica-Neue, Arial, sans-serif;'
     },
     {
         selector: 'div.box',
-        type: 'big'
     },
     {
         selector: 'section',
-        type: 'big'
     },
     {
         selector: 'div.details',
-        type: 'big'
     },
     {
         selector: 'header',
-        type: 'big'
     }
 ]);
 

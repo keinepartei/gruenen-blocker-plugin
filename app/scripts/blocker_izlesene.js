@@ -15,11 +15,9 @@ import { Blocker } from "./blocker";
 let blocker = new Blocker([
     {
         selector: 'div.card',
-        type: 'small'
     },
     {
         selector: 'article.card',
-        type: 'small'
     },
     {
     	// TODO: Remove player of fix auto play.

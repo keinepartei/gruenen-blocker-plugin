@@ -25,7 +25,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'div.slide div.img',
-        type: 'small'
     },
     {
         selector: 'div.teaser',
@@ -47,9 +46,13 @@ let blocker = new Blocker([
         selector: '.teaserLink',
         type: 'big'
     },
-    {
+    { // TODO: Fix, depends on image height.
         selector: 'div.promo',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '30%',
+        title: 'color: #D70D12; font-size: 16px; line-height: 1.2; font-weight: 400',
+        txt: 'color: #000; font-size: 1.0rem; line-height: 24px; font-weight: bold;'
     },
     {
         selector: 'div.popularArticles',
@@ -61,9 +64,13 @@ let blocker = new Blocker([
     },
     {
         selector: '.singleTeaser',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '51.5%',
+        title: 'color: #D70D12; font-size: 16px; line-height: 1.2; font-weight: 400',
+        txt: 'color: #000; font-size: 1.0rem; line-height: 24px; font-weight: bold;'
     },
-    {
+    { // TODO Fix entire list (3 entries) is blocked. 
         selector: 'div.list',
         type: 'big'
     }

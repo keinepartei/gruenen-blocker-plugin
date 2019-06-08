@@ -19,29 +19,38 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    {
+	{ // Medium inline teasers with image on the left. Must be processed
+		// before larger inline teasers.
+        selector: 'div.mod.modA.smallImage .teaser',
+        type: 'big',
+        align: 'left',
+        imageWidth: '32.333%',
+        imageHeight: '200px',
+        title: 'color: #444; font-size: 16px; line-height: 21.6px; font-weight: 400, font-family: Thesis, helvetica, arial, sans-serif;', 
+        txt: 'color: #666; font-size: 19.22px; line-height: 24px; font-weight: 700; font-family: Thesis;'
+    },
+	{
         selector: 'div.teaser',
-        type: 'big'
+        type: 'big',
+        align: 'top',
+        imageHeight: '51.5%',
+        title: 'color: #444; font-size: 16px; line-height: 21.6px; font-weight: 400, font-family: Thesis, helvetica, arial, sans-serif;', 
+        txt: 'color: #666; font-size: 28.22px; line-height: 35px; font-weight: 700; font-family: Thesis;'
     },
     {
         selector: 'div.media',
-        type: 'big'
     },
     {
         selector: 'div.mediaCon',
-        type: 'big'
     },
     {
         selector: 'li.current',
-        type: 'small'
     },
-    {
-        selector: 'div.box',
-        type: 'big'
+    { // Top Ten teasers. TODO: Fix.
+        selector: 'div.linklist ul li',
     },
     {
         selector: 'div.mod.modA.modParagraph',
-        type: 'big'
     },
 ]);
 

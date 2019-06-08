@@ -29,7 +29,6 @@ let blocker = new Blocker([
     },
     {
         selector: 'div.entrylist__entry',
-        type: 'small'
     },
     {
         selector: 'div.ProfileCard',
