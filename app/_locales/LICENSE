@@ -6,6 +6,7 @@
  * ./en/messages.json -> English language file.
  * ./es/messages.json -> Spanish language file.
  * ./de/messages.json -> German language file.
+ * ./fr/messages.json -> French language file.
  * ./tr/messages.json -> Turkish language file.  
  *
  * Published under the GNU Lesser General Public License Version 3, 29 June 2007

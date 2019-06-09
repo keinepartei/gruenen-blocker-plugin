@@ -30,6 +30,11 @@ const labels = [
 	"blockDeDieParteiName",
 	"blockDeAfDName",
 	"blockDeAfDNotice",
+	"blockFrRemName",
+	"blockFrLrName",
+	"blockFrFiName",
+	"blockFrPsName",
+	"blockFrEelvName",
 	"blockEsPsoeName",
 	"blockEsPpName",
 	"blockEsCiudadanosName",
@@ -43,6 +48,7 @@ const labels = [
 	"quickAccessName",
 	"accessByCountryName",
 	"countryDeName",
+	"countryFrName",
 	"countryEsName",
 	"countryTrName"
 ];
@@ -90,6 +96,11 @@ function storeOptions(e) {
 		block_DE_CDU : document.getElementById('block_DE_CDU').checked,
 		block_DE_CSU : document.getElementById('block_DE_CSU').checked,
 		block_DE_DIE_PARTEI : document.getElementById('block_DE_DIE_PARTEI').checked,
+		block_FR_REM : document.getElementById('block_FR_REM').checked,
+		block_FR_LR : document.getElementById('block_FR_LR').checked,
+		block_FR_FI : document.getElementById('block_FR_FI').checked,
+		block_FR_PS : document.getElementById('block_FR_PS').checked,
+		block_FR_EELV : document.getElementById('block_FR_EELV').checked,
 		block_ES_PSOE : document.getElementById('block_ES_PSOE').checked,
 		block_ES_PP : document.getElementById('block_ES_PP').checked,
 		block_ES_PC : document.getElementById('block_ES_PC').checked,
@@ -153,6 +164,11 @@ function setValues(properties) {
 	document.getElementById('block_DE_FDP').checked = properties.block_DE_FDP;
 	document.getElementById('block_DE_DIE_PARTEI').checked = properties.block_DE_DIE_PARTEI;
 	// AfD blocker functionality is not implemented.
+	document.getElementById('block_FR_REM').checked = properties.block_FR_REM;
+	document.getElementById('block_FR_LR').checked = properties.block_FR_LR;
+	document.getElementById('block_FR_FI').checked = properties.block_FR_FI;
+	document.getElementById('block_FR_PS').checked = properties.block_FR_PS;
+	document.getElementById('block_FR_EELV').checked = properties.block_FR_EELV;
 	document.getElementById('block_ES_PSOE').checked = properties.block_ES_PSOE;
 	document.getElementById('block_ES_PP').checked = properties.block_ES_PP;
 	document.getElementById('block_ES_PC').checked = properties.block_ES_PC;

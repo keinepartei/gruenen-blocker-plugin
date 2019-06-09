@@ -64,6 +64,31 @@ module.exports = {
 			s += lowerCase('die partei'); // Zwinkersmiley
 			console.log("Block Die PARTEI contents as well.");
 		}
+		if (properties.block_FR_REM) {
+			s += match([ 'CDU' ]);
+			s += lowerCase('christlich demokratische union');
+			console.log("Block LeREM contents as well.");
+		}
+		if (properties.block_FR_LR) {
+			s += match([ 'LR' ]);
+			s += lowerCase('les républicains');
+			console.log("Block LR contents as well.");
+		}
+		if (properties.block_FR_FI) {
+			s += match([ 'FI' ]);
+			s += lowerCase('france insoumise');
+			console.log("Block FI contents as well.");
+		}
+		if (properties.block_FR_PS) {
+			s += match([ 'PS' ]);
+			s += lowerCase('parti socialiste');
+			console.log("Block PS contents as well.");
+		}
+		if (properties.block_FR_EELV) {
+			s += match([ 'EELV' ]);
+			s += lowerCase('europe écologie les verts');
+			console.log("Block EELV contents as well.");
+		}
 		if (properties.block_ES_PSOE) {
 			s += match([ 'PSOE' ]);
 			s += lowerCase('partido socialista obrero español');
@@ -116,7 +141,7 @@ module.exports = {
 };
 
 function lowerCase(string) {
-	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞÑ', 'abcdefghijklmnopqrstuvwxyzäöüğñ'),'" + string + "')";
+	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞÑÉ', 'abcdefghijklmnopqrstuvwxyzäöüğñé'),'" + string + "')";
 }
 
 function match(strings) {

@@ -1,54 +1,54 @@
 {
 	"appName": {
-		"message": "Bloqueador de contenido de verdes",
+		"message": "Bloqueur de contenu verts",
 		"description": "Blocks contents about Alliance 90/The Greens and others."
 	},
 	"appShortName": {
-		"message": "Bloqueador de verdes",
+		"message": "Bloqueur verts",
 		"description": "Blocks contents about Alliance 90/The Greens and more."
 	},
 	"appDescription": {
-		"message": "Bloqueador de verdes - Bloquea los contenidos sobre Alianza 90/Los Verdes y otros..",
+		"message": "Bloqueur verts - Bloque le contenu d'Alliance 90 / Les Verts et autres.",
 		"description": "Greens Blocker - Blocks contents about Alliance 90/The Greens and others."
 	},
 	"overlayTitle": {
-		"message": "Bloqueador de verdes",
+		"message": "Bloqueur verts",
 		"description": "Greens Blocker"
 	},
 	"overlayTxt": {
-		"message": "100% Alianza 90/Los Verdes libre de contenido.",
+		"message": "100% sans contenu d''Alliance 90 / Les Verts.",
 		"description": "100% Alliance 90/The Greens content-free."
 	},
 	"showConfirmation": {
-		"message": "La información obligatoria del proveedor secundario para la impresión, la protección de datos y la responsabilidad también se puede bloquear. ¡Mejor vete rápido!",
+		"message": "Les informations obligatoires du fournisseur sur l'empreinte, la protection des données et la responsabilité peuvent également être bloquées. Mieux vaut partir vite!",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
 	},
 	"optionsTabGeneralName": {
-		"message": "General",
+		"message": "Général",
 		"description": "General"
 	},
 	"optionsTabAppearanceName": {
-		"message": "Apariencia",
+		"message": "Apparence",
 		"description": "Appearance"
 	},
 	"optionsTabContentFilterName": {
-		"message": "Filtro de contenido",
+		"message": "Filtre de contenu",
 		"description": "Content Filter"
 	},
 	"optionsOverlayFileredContentName": {
-		"message": "Superponer contenido filtrado",
+		"message": "Superposer le contenu filtré",
 		"description": "Overlay filtered content"
 	},
 	"optionsHideFileredContentName": {
-		"message": "Ocultar o eliminar contenido filtrado",
+		"message": "Masquer ou supprimer le contenu filtré",
 		"description": "Hide or Remove filtered content"
 	},
 	"optionsOverlayBackgroundName": {
-		"message": "Fondo de superposición",
+		"message": "Fond de superposition",
 		"description": "Overlay background"
 	},
 	"blockAllGreensName": {
-		"message": "Bloque de verdes de todos los países.",
+		"message": "Bloquer les verts de tous les pays.",
 		"description": "Block Greens of all countries."
 	},
 	"blockGretaThunbergName": {
@@ -68,55 +68,55 @@
 		"description": "Block all Trumps."
 	},
 	"blockDeGrueneName": {
-		"message": "Alianza 90/Los Verdes (Die GRÜNEN)",
+		"message": "Alliance 90 / Les Verts (Die GRÜNEN)",
 		"description": "Bündnis 90/Die Grünen (Die GRÜNEN)."
 	},
 	"blockDeSpdName": {
-		"message": "Partido Socialdemócrata de Alemania (SPD)",
+		"message": "Parti social-démocrate d'Allemagne (SPD)",
 		"description": "Social Democratic Party of Germany (SPD)."
 	},
 	"blockDeDieLinkeName": {
-		"message": "La Izquierda (DIE LINKE)",
+		"message": "La Gauche (DIE LINKE)",
 		"description": "The Left (DIE LINKE)."
 	},
 	"blockDeFdpName": {
-		"message": "Partido Democrático Libre (FPD)",
+		"message": "Parti libéral-démocrate (FPD)",
 		"description": "Free Democratic Party (FPD)."
 	},
 	"blockDeCduName": {
-		"message": "Unión Demócrata Cristiana (CDU)",
+		"message": "Union chrétienne-démocrate d'Allemagne (CDU)",
 		"description": "Christian Democratic Union of Germany (CDU)."
 	},
 	"blockDeCsuName": {
-		"message": "Unión Social Cristiana de Baviera (CSU)",
+		"message": "Union chrétienne-sociale en Bavière",
 		"description": "Christian Social Union in Bavaria (CSU)."
 	},
 	"blockDeDieParteiName": {
-		"message": "Parti (göz kırpmak gülen)",
+		"message": "La fête (Die PARTEI)",
 		"description": "Die PARTEI (wink smiley)."
 	},
 	"blockDeAfDName": {
-		"message": "Alternativa para Alemania (AfD)*",
+		"message": "Alternative pour l'Allemagne (AfD)*",
 		"description": "Alternative for Germany (AfD)*"
 	},
 	"blockDeAfDNotice": {
-		"message": "* Para bloquear la Alternativa para Alemania (AfD), use el Bloqueador de AfD original de Die PARTEI. Alternativamente, puede bloquear Die PARTEI en sí. Los sistemas filtran todos los contenidos, incluido el 'die partei', que no distingue entre mayúsculas y minúsculas, por lo que el uno o el otro contenido de AfD también se bloquearía.",
+		"message": "* Pour bloquer l'alternative pour l'Allemagne (AfD), utilisez l'original AfD-Blocker de Die PARTEI. Sinon, vous pouvez bloquer Die PARTEI. Les systèmes filtrent tous les contenus, y compris «die partei», indépendamment de la casse, l'un ou l'autre des contenus de AfD étant également bloqué.",
 		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
 	},
 	"blockFrRemName": {
-		"message": "La República En Marcha! (LaREM)",
+		"message": "La République en Marche! (LaREM)",
 		"description": "Block The Republic on the move! (LaREM)."
 	},
 	"blockFrLrName": {
-		"message": "Los Republicanos (LR)",
+		"message": "Les Républicains (LR)",
 		"description": "Block The Republicans (LR)."
 	},
 	"blockFrFiName": {
-		"message": "Francia Insumisa (FI)",
+		"message": "La France insoumise (FI)",
 		"description": "Block Untamed France (FI)."
 	},
 	"blockFrPsName": {
-		"message": "Partido Socialista (PS)",
+		"message": "Parti socialiste (PS)",
 		"description": "Block the Socialist Party (PS)."
 	},
 	"blockFrEelvName": {
@@ -124,19 +124,19 @@
 		"description": "Block Europe Ecology – The Greens (EELV)."
 	},
 	"blockEsPsoeName": {
-		"message": "Partido Socialista Obrero Español (PSOE)",
+		"message": "Parti socialiste ouvrier espagnol (PSOE)",
 		"description": "Block the Spanish Socialist Workers' Party (PSOE)."
 	},
 	"blockEsPpName": {
-		"message": "Partido Popular (PP)",
+		"message": "Parti populaire (PP)",
 		"description": "Block the People's Party (PP)."
 	},
 	"blockEsCiudadanosName": {
-		"message": "Partido de la Ciudadanía (Ciudadanos)",
+		"message": "Parti de la Ciudadanía (Ciudadanos)",
 		"description": "Block the Ciudadanos party (Ciudadanos)."
 	},
 	"blockEsUpdName": {
-		"message": "Unidos/Unidas Podemos (UP)",
+		"message": "Podemos (UP)",
 		"description": "Block the United We Can Party - Unidos Podemos(PP)."
 	},
 	"blockEsVoxName": {
@@ -144,46 +144,43 @@
 		"description": "Block the Vox political party (VOX)."
 	},	
 	"blockTrAkpName": {
-		"message": "Partido Justicia y Desarrollo (AKP)",
+		"message": "Parti de la justice et du développement (AKP)",
 		"description": "Block the Justice and Development Party (AKP)."
 	},
 	"blockTrChpName": {
-		"message": "Partido Popular Republicano (CHP)",
+		"message": "Parti républicain du peuple (CHP)",
 		"description": "Block the Republican People's Party (CHP)."
 	},
 	"blockTrHdpName": {
-		"message": "Partido Popular Demócrata (HDP)",
+		"message": "Parti démocratique des peuples (HDP)",
 		"description": "Block the Peoples' Democratic Party (HDP)."
 	},
 	"blockTrMhpName": {
-		"message": "Partido movimiento nacionalista (MHP)",
+		"message": "Parti d'action nationaliste (MHP)",
 		"description": "Block the Nationalist Movement Party (MHP)."
 	},
 	"blockTrIyiName": {
-		"message": "Partido İYİ (IYI)",
+		"message": "Parti İYİ (IYI)",
 		"description": "Block the İyi Party (IYI)."
 	},
 	"quickAccessName": {
-		"message": "Acceso rapido",
+		"message": "Accès rapide",
 		"description": "Quick access"
 	},
 	"accessByCountryName": {
-		"message": "Acceso por país",
+		"message": "Accès par pays",
 		"description": "Access by country"
 	},
 	"countryDeName": {
-		"message": "Alemania (DE)",
+		"message": "Allemagne (DE)",
 		"description": "Germany (DE)*"
 	},
-	"countryFrName": {
-		"message": "Francia (FR)"
-	},
 	"countryEsName": {
-		"message": "España (ES)",
+		"message": "Espagne (ES)",
 		"description": "Spain"
 	},
 	"countryTrName": {
-		"message": "Turquía (TR)",
+		"message": "Turquie (TR)",
 		"description": "Turkey (TR)"
 	}
 }

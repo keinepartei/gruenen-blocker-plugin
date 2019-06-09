@@ -3,6 +3,7 @@
 Languages:
 [![English](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/GB.svg)](README.md) -
 [![German](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/DE.svg)](README.de.md) -
+[![French](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/FR.svg)](README.fr.md) -
 [![Turkish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/TR.svg)](README.tr.md) -
 [![Spanish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/ES.svg)](README.es.md) -
 
@@ -21,9 +22,10 @@ Use the Greens Blocker. It's much better than the [AfD-Blocker by Die PARTEI](ht
 # Features
 
 - available for FireFox and Google Chrome,
-- available in different user languages (now English, German, Turkish and Spanish),
+- available in different user languages (now English, German, French, Turkish and Spanish),
 - blocks contents about Alliance 90 / The Greens (Bündnis 90/Die Grünen),
 - optional blocks contents about German parties: SPD, Die Linke, CDU, CSU oder FDP,
+- optional blocks contents about French parties: LaREM, LR, FI, PS oder EELV,
 - optional blocks contents about Turkish parties: AKP, CHP, HDP, MHP oder İYİ Parti,
 - optional blocks contents about Spanish parties: PSOE, PP, Cuidadanos, Unidos/Unidas Podemos (UP) oder VOX,
 - works with almost all social media sites, search engines and news sites:

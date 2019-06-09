@@ -94,6 +94,26 @@
 	"blockDeAfDNotice": {
 		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI. Alternativ können Sie auch Inhalte von die Partei Die PARTEI blockieren. Denn ungeachtet der Schreibweise filtert das System alle Inhalte mit 'die partei', wodurch auch der eine odere andere Inhalt der AfD blockiert würde."
 	},
+	"blockFrRemName": {
+		"message": "Die Republik in Bewegung! (LaREM)",
+		"description": "Block The Republic on the move! (LaREM)."
+	},
+	"blockFrLrName": {
+		"message": "Die Republikaner (LR)",
+		"description": "Block The Republicans (LR)."
+	},
+	"blockFrFiName": {
+		"message": "Rebellisches Frankreich (FI)",
+		"description": "Block Untamed France (FI)."
+	},
+	"blockFrPsName": {
+		"message": "Sozialistische Partei (PS)",
+		"description": "Block the Socialist Party (PS)."
+	},
+	"blockFrEelvName": {
+		"message": "Europe Écologie–Die Grünen (EELV)",
+		"description": "Block Europe Ecology – The Greens (EELV)."
+	},
 	"blockEsPsoeName": {
 		"message": "Spanische Sozialistische Arbeiterpartei (PSOE)",
 		"description": "Block the Spanish Socialist Workers' Party (PSOE)."
@@ -142,6 +162,9 @@
 	},
 	"countryDeName": {
 		"message": "Deutschland (DE)"
+	},
+	"countryFrName": {
+		"message": "Frankreich (FR)"
 	},
 	"countryEsName": {
 		"message": "Spanien (ES)"

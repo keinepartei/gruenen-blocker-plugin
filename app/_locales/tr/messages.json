@@ -103,6 +103,46 @@
 		"message": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI itself. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well.",
 		"description": "* To block the Alternative for Germany (AfD), use the original AfD-Blocker by Die PARTEI. Alternatively you can block Die PARTEI. The systems filters all contents including 'die partei' case-insensitive, whereby the one or the other content by AfD would be blocked as well."
 	},
+	"blockFrRemName": {
+		"message": "İlerlemekteki Cumhuriyet! (LaREM)",
+		"description": "Block The Republic on the move! (LaREM)."
+	},
+	"blockFrLrName": {
+		"message": "Cumhuriyetçiler (LR)",
+		"description": "Block The Republicans (LR)."
+	},
+	"blockFrFiName": {
+		"message": "Boyun Eğmeyen Fransa (FI)",
+		"description": "Block Untamed France (FI)."
+	},
+	"blockFrPsName": {
+		"message": "Sosyalist Parti (PS)",
+		"description": "Block the Socialist Party (PS)."
+	},
+	"blockFrEelvName": {
+		"message": "Avrupa Ekolojisi - Yeşiller (EELV)",
+		"description": "Block Europe Ecology – The Greens (EELV)."
+	},
+	"blockEsPsoeName": {
+		"message": "İspanyol Sosyalist İşçi Partisi (PSOE)",
+		"description": "Block the Spanish Socialist Workers' Party (PSOE)."
+	},
+	"blockEsPpName": {
+		"message": "Halk Partisi (PP)",
+		"description": "Block the People's Party (PP)."
+	},
+	"blockEsCiudadanosName": {
+		"message": "Partido de la Ciudadanía (Ciudadanos)",
+		"description": "Block the Ciudadanos party (Ciudadanos)."
+	},
+	"blockEsUpdName": {
+		"message": "Unidos/Unidas Podemos (UP)",
+		"description": "Block the United We Can Party - Unidos Podemos(PP)."
+	},
+	"blockEsVoxName": {
+		"message": "Vox (VOX)",
+		"description": "Block the Vox political party (VOX)."
+	},
 	"blockTrAkpName": {
 		"message": "Adalet ve Kalkınma Partisi (AKP)",
 		"description": "Block the Justice and Development Party (AKP)."
@@ -134,6 +174,9 @@
 	"countryDeName": {
 		"message": "Almanya (DE)",
 		"description": "Germany (DE)*"
+	},
+	"countryFrName": {
+		"message": "Fransa (FR)"
 	},
 	"countryEsName": {
 		"message": "İspanya (ES)",
