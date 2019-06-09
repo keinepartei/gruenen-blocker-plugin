@@ -1,31 +1,36 @@
 [![Build Status](https://travis-ci.com/keinepartei/gruenen-blocker-plugin.svg?branch=master)](https://travis-ci.com/keinepartei/gruenen-blocker-plugin)
 
+Languages:
+[![English](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/GB.svg)](README.md) -
+[![German](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/DE.svg)](README.de.md) -
+[![Turkish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/TR.svg)](README.tr.md) -
+[![Spanish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/ES.svg)](README.es.md) -
+
 ![Bündnis 90/Die Grünen Content Blocker](app/images/icon-128.png)
 
-# Bündnis 90/Die Grünen Content Blocker von keiner Partei
+# Greens Content Blocker
 
-An alle, die das Internet zu einem besseren Ort machen möchten oder einfach nur genervt sind.
-Nehmt euch unseren Grünen Blocker vor und macht ihn noch größer, noch kompatibler und noch besser.
+The digital greens blocker **blocks contents about Alliance 90 / The Greens and consorts** reliable.
 
-Der Grünen Blocker **blockiert Inhalte von Bündnis 90/Die Grünen und Konsorten** zuverlässig.
+New!
 
-Neu!
+Optionally the plugin blocks contents about other parties as well.
 
-Optional blockiert der Grünen Blocker auch Inhalte anderer Parteien - SPD, Die Linke, FDP, usw.
+Use the Greens Blocker. It's much better than the [AfD-Blocker by Die PARTEI](https://github.com/dieparteidiepartei/afd-blocker-plugin)!
 
-Verwenden Sie den Grünen Blocker von keiner Partei. Er ist viel besser als der [AfD-Blocker](https://github.com/dieparteidiepartei/afd-blocker-plugin) von der Partei Die PARTEI.
+# Features
 
-## Features
+- available for FireFox and Google Chrome,
+- available in different user languages (now English, German, Turkish and Spanish),
+- blocks contents about Alliance 90 / The Greens (Bündnis 90/Die Grünen),
+- optional blocks contents about German parties: SPD, Die Linke, CDU, CSU oder FDP,
+- optional blocks contents about Turkish parties: AKP, CHP, HDP, MHP oder İYİ Parti,
+- optional blocks contents about Spanish parties: PSOE, PP, Cuidadanos, Unidos/Unidas Podemos (UP) oder VOX,
+- works with almost all social media sites, search engines and news sites:
 
-- verfügbar für FireFox und Google Chrome,
-- verfügbar in verschiedenen Sprachen (derzeit Deutsch und Englisch),
-- blockiert Inhalte von Bündnis 90/Die Grünen,
-- blockiert optional Inhalte von anderen Parteien bspw. SPD, Die Linke, CDU, CSU, FDP, usw.,
-- funktioniert mit so gut wie allen bekannten Social Media Portalen, Suchmaschinen und Nachrichten-Seiten:
+Facebook, Instagram, Twitter, Youtube and Izlesene. DuckDuckGo, Startpage, Qwant and Yandex. Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF, Die Zeit, and many more.
 
-Facebook, Instagram, Twitter und Youtube. DuckDuckGo, Startpage und Qwant. Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF und der Zeit, und vielen weiteren.
-
-## Download
+# User Downloads
 
 - [Chrome Extension](https://chrome.google.com/webstore/detail/gr%C3%BCnen-blocker/hhpcjimcpbbihmamgphcafoeohhblmpo)
 - [Firefox Add-on (German)](https://addons.mozilla.org/de/firefox/addon/gr%C3%BCnen-content-blocker/)
@@ -33,20 +38,24 @@ Facebook, Instagram, Twitter und Youtube. DuckDuckGo, Startpage und Qwant. Bild,
 - [Firefox Add-on (Spanish)](https://addons.mozilla.org/es/firefox/addon/gr%C3%BCnen-content-blocker/)
 - [Firefox Add-on (Turkish)](https://addons.mozilla.org/tr/firefox/addon/gr%C3%BCnen-content-blocker/)
 
-## Installation
+# Developers
+
+## Installation of dependencies
 
 Install [Node.js](https://nodejs.org/en/) and run:
 
-	$ npm install
+	 npm install
+	 
+from project root directory.
 
-## Production
+## Build production stage (./packages/)
 
     npm run build chrome
     npm run build firefox
     npm run build opera
     npm run build edge
 
-## Development
+## Build development stage (./dist/)
 
     npm run dev chrome
     npm run dev firefox
@@ -106,25 +115,18 @@ The blocker has to be activated in `app/manifest.json`:
         ...
       ]
 
-### Add new contents to be blocked
+### Add new contents to be blocked.
 
 tbd.
-
-## Build
-
-    npm run build chrome
-    npm run build firefox
-    npm run build opera
-    npm run build edge
 
 ### Fixes
 
 tbd.
 
-## Environment
+### Environment
 
 The build tool also defines a variable named `process.env.NODE_ENV` in your scripts.
 
-## Webextension toolbox docs
+### Webextension toolbox docs
 
 * [webextension-toolbox](https://github.com/HaNdTriX/webextension-toolbox)
