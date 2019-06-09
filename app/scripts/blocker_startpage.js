@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     /* www.startpage.com */
     {
         selector: '.card.instant-wiki.search-item',
@@ -42,6 +42,4 @@ let blocker = new Blocker([
         selector: 'div.gsc-results div',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

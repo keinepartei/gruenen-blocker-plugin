@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{ // Most read. Smaller inline teasers.
         selector: '.ts-most-read article.ts-teaser',
         type: 'big',
@@ -66,6 +66,4 @@ let blocker = new Blocker([
         selector: '.hcf-referral-box',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

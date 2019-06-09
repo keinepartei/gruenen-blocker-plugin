@@ -12,7 +12,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'div.card',
     },
@@ -25,6 +25,4 @@ let blocker = new Blocker([
         type: 'big'
     },
 
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

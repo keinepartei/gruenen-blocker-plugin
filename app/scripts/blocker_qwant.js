@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: '.result',
     },
@@ -34,6 +34,4 @@ let blocker = new Blocker([
         selector: '.result-smart__social__item',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

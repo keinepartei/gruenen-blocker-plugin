@@ -29,7 +29,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: '.search-item',
     },
@@ -64,6 +64,4 @@ let blocker = new Blocker([
         selector: 'section',
         type: 'big'
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

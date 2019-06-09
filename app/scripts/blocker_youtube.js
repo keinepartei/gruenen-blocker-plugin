@@ -19,7 +19,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'ytd-video-renderer.style-scope',
         type: 'big'
@@ -44,6 +44,4 @@ let blocker = new Blocker([
         selector: 'ytd-compact-video-renderer.style-scope',
 
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

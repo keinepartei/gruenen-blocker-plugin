@@ -16,7 +16,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     { // 'Schwerpunkte' bordered links at the top of the page.
         selector: 'a.nav__tag',
     },
@@ -42,6 +42,4 @@ let blocker = new Blocker([
     { // Bottom of the page 'Schlagzeilen'.
     	selector: 'div.buzzboard article.newsteaser',
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

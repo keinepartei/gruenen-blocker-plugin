@@ -16,7 +16,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{ // Teaser right.
         selector: 'article.teaser--video',
         type: 'big',
@@ -45,6 +45,4 @@ let blocker = new Blocker([
         selector: 'li.teaser',
         title: 'font-size: 1.6rem; line-height: 1.2;',
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

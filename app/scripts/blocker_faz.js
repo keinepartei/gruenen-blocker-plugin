@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     { // Vertical teaser in the middle.
         selector: 'div.o-Grid_Col',
         type: 'big',
@@ -49,6 +49,4 @@ let blocker = new Blocker([
         selector: 'div.sld-TeaserMore_Item',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

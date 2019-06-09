@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'article.sectbody',
         type: 'big'
@@ -41,6 +41,4 @@ let blocker = new Blocker([
         selector: '.objlink.brief.legacy.article',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

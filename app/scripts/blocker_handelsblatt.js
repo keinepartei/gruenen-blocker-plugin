@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {	// Inline teasers (problem small and width).
         selector: '.c-teaser--article',
         type: 'big',
@@ -50,6 +50,4 @@ let blocker = new Blocker([
 //        selector: '.vhb-content',
 //        type: 'big'
 //    }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

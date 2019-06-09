@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'li.element',
         type: 'big'
@@ -38,6 +38,4 @@ let blocker = new Blocker([
         selector: 'div.entrylist__entry',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{ // Medium inline teasers with image on the left. Must be processed
 		// before larger inline teasers.
         selector: 'div.mod.modA.smallImage .teaser',
@@ -52,6 +52,4 @@ let blocker = new Blocker([
     {
         selector: 'div.mod.modA.modParagraph',
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

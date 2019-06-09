@@ -16,7 +16,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{ // Almost all.
         selector: 'div.o-teaser-article',
         type: 'big',
@@ -29,6 +29,4 @@ let blocker = new Blocker([
 		// the first match in the breadcrump list.
         selector: '.navigation-link',
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

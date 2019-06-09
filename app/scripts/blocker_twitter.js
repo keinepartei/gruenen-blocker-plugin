@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'div.tweet',
         type: 'big'
@@ -34,6 +34,4 @@ let blocker = new Blocker([
         selector: 'div.ProfileCard',
         type: 'big'
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

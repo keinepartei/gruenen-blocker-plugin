@@ -61,13 +61,13 @@ The basic functionality is implemented in `app/scripts/blocker.js`
 
 Each site has its own blocker within `app/scripts`.
 
-Copy a blocker script and try to implement an additional blocker for your desired site. Invoke the blocker class procedures with its run script `app/scripts/run_blocker.js`. See sample `app/scripts/blocker_sueddeutsche.js`:
+Copy a blocker script and try to implement an additional blocker for your desired site. See sample `app/scripts/blocker_sueddeutsche.js`:
 
 		console.log("Call content blocker.");
 		
 		import { Blocker } from "./blocker";
 		
-		let blocker = new Blocker([
+		new Blocker([
 		    {
 		        selector: 'li.element',
 		        type: 'big'
@@ -87,9 +87,7 @@ Copy a blocker script and try to implement an additional blocker for your desire
 		        selector: 'div.entrylist__entry',
 		        type: 'big'
 		    },
-		]);
-		
-		require("./run_blocker").run(blocker);
+		]).run();
 
 The blocker has to be activated in `app/manifest.json`:
 

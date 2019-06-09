@@ -228,6 +228,19 @@ export class Blocker {
         subtree: true,
       });
     }
+    
+    run() {
+		browser.storage.local.get(['searchExpression', 'overlay_background']).then((result) => {
+			this.xpathExpression = result.searchExpression;
+			if (result.overlay_background) {
+				this.updateOverlayBackground(result.overlay_background);
+			}
+			this.modifyContent([document.body]);
+			this.watchPageForMutations();
+		}, (error) => {
+			console.error("Could not initialize blocker: " + error);
+		});
+	}
 }
 
 /**

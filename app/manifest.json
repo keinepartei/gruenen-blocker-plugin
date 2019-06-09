@@ -41,7 +41,7 @@
 		],
 		"persistent": true
 	},
-	"applications": {
+	"__firefox__applications": {
 		"gecko": {
 			"id": "keinepartei@ich.ms"
 		}

@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{   // Small teasers without image at the bottom of the page must be
 		// processed before other 'article.teaser--small'.
         selector: 'article.teaser--noimg',
@@ -39,6 +39,4 @@ let blocker = new Blocker([
         title: 'color: black; font-size: 1.0rem; line-height: 1.15; font-weight: normal;',
         txt: 'color: black; font-size: 1.2rem; line-height: 1.3; font-weight: normal;'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

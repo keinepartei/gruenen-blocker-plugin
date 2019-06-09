@@ -19,7 +19,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'article.b-cluster-teaser',
         type: 'big',
@@ -40,6 +40,4 @@ let blocker = new Blocker([
     {
         selector: 'header',
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

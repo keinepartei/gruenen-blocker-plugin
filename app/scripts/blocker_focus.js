@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'div.gsc-results div',
         type: 'big'
@@ -74,6 +74,4 @@ let blocker = new Blocker([
         selector: 'div.list',
         type: 'big'
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

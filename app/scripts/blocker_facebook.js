@@ -18,13 +18,11 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{
         selector: '#pages_side_column ul li',
     },
     {
         selector: 'div.userContentWrapper',
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

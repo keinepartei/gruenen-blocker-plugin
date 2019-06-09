@@ -12,7 +12,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: '.module',
     },
@@ -23,6 +23,4 @@ let blocker = new Blocker([
         selector: '.results_links_deep',
     },
 
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

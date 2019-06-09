@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
 	{ // TODO: Test. It#s at the bottom of the page '...Zeitungen'.
         selector: '.box-head',
         type: 'big'
@@ -40,6 +40,4 @@ let blocker = new Blocker([
         selector: '.mod-aside',
         type: 'big'
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

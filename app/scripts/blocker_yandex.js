@@ -12,7 +12,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'div.organic',
     },
@@ -27,6 +27,4 @@ let blocker = new Blocker([
     {
         selector: 'div.showcase__item_optimized_yes',
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

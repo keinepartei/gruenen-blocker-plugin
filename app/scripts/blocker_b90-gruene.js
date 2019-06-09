@@ -18,11 +18,9 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: 'body',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

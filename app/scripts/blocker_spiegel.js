@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     { // Inline teaser with image on left side.
         selector: 'div.teaser',
         type: 'big',
@@ -58,6 +58,4 @@ let blocker = new Blocker([
         selector: 'li.slider_item',
         type: 'big'
     }
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

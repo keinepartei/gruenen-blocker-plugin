@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([
+new Blocker([
     {
         selector: '.id-LinkOverlay',
         type: 'big'
@@ -36,6 +36,4 @@ let blocker = new Blocker([
     {
         selector: '.id-Breadcrumb-element-link',
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();

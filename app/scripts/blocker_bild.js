@@ -8,9 +8,9 @@
  * 
  * Content blocker template for bild.de.
  * 
- * Original source code is from "dieparteidiepartei" (https://github.com/dieparteidiepartei)
- * licensed under the ISC License by the Internet Systems Consortium
- * (www.isc.org)
+ * Original source code is from "dieparteidiepartei"
+ * (https://github.com/dieparteidiepartei) licensed under the ISC License by the
+ * Internet Systems Consortium (www.isc.org)
  * https://github.com/dieparteidiepartei/afd-blocker-plugin/app/scripts/blocker_bild.js
  * commit acca1e3e930a0f5a4ef3189a54d11068625098aa.
  */
@@ -18,7 +18,7 @@ console.log("Call content blocker.");
 
 import { Blocker } from "./blocker";
 
-let blocker = new Blocker([ 
+new Blocker([ 
     {
         selector: 'div.hentry.landscape',
     },
@@ -42,9 +42,7 @@ let blocker = new Blocker([
         selector: 'ul.lead',
         type: 'big'
     },
-]);
-
-require("./run_blocker").run(blocker);
+]).run();
 
 /**
  * BILD.de uses teaser images (sometimes without alt attributes). So we try to
@@ -70,5 +68,3 @@ console.log("Call content blocker for URL parts.");
 
     teaserLinkBlocker.modifyContent([document]);
 });
-
-
