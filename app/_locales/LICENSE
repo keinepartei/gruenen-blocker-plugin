@@ -4,6 +4,7 @@
  * Includes every langugage file in this or sub folders.
  *  
  * ./en/messages.json -> English language file.
+ * ./es/messages.json -> Spanish language file.
  * ./de/messages.json -> German language file.
  * ./tr/messages.json -> Turkish language file.  
  *

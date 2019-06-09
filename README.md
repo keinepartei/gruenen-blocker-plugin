@@ -28,7 +28,10 @@ Facebook, Instagram, Twitter und Youtube. DuckDuckGo, Startpage und Qwant. Bild,
 ## Download
 
 - [Chrome Extension](https://chrome.google.com/webstore/detail/gr%C3%BCnen-blocker/hhpcjimcpbbihmamgphcafoeohhblmpo)
-- [Firefox Add-on](https://addons.mozilla.org/de/firefox/addon/gr%C3%BCnen-content-blocker/)
+- [Firefox Add-on (German)](https://addons.mozilla.org/de/firefox/addon/gr%C3%BCnen-content-blocker/)
+- [Firefox Add-on (English)](https://addons.mozilla.org/en-US/firefox/addon/gr%C3%BCnen-content-blocker/)
+- [Firefox Add-on (Spanish)](https://addons.mozilla.org/es/firefox/addon/gr%C3%BCnen-content-blocker/)
+- [Firefox Add-on (Turkish)](https://addons.mozilla.org/tr/firefox/addon/gr%C3%BCnen-content-blocker/)
 
 ## Installation
 

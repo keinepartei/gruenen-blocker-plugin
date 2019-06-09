@@ -30,6 +30,11 @@ const labels = [
 	"blockDeDieParteiName",
 	"blockDeAfDName",
 	"blockDeAfDNotice",
+	"blockEsPsoeName",
+	"blockEsPpName",
+	"blockEsCiudadanosName",
+	"blockEsUpdName",
+	"blockEsVoxName",
 	"blockTrAkpName",
 	"blockTrChpName",
 	"blockTrHdpName",
@@ -38,6 +43,7 @@ const labels = [
 	"quickAccessName",
 	"accessByCountryName",
 	"countryDeName",
+	"countryEsName",
 	"countryTrName"
 ];
 
@@ -84,6 +90,11 @@ function storeOptions(e) {
 		block_DE_CDU : document.getElementById('block_DE_CDU').checked,
 		block_DE_CSU : document.getElementById('block_DE_CSU').checked,
 		block_DE_DIE_PARTEI : document.getElementById('block_DE_DIE_PARTEI').checked,
+		block_ES_PSOE : document.getElementById('block_ES_PSOE').checked,
+		block_ES_PP : document.getElementById('block_ES_PP').checked,
+		block_ES_PC : document.getElementById('block_ES_PC').checked,
+		block_ES_UP : document.getElementById('block_ES_UP').checked,
+		block_ES_VOX : document.getElementById('block_ES_VOX').checked,
 		block_TR_AKP : document.getElementById('block_TR_AKP').checked,
 		block_TR_CHP : document.getElementById('block_TR_CHP').checked,
 		block_TR_HDP : document.getElementById('block_TR_HDP').checked,
@@ -142,6 +153,11 @@ function setValues(properties) {
 	document.getElementById('block_DE_FDP').checked = properties.block_DE_FDP;
 	document.getElementById('block_DE_DIE_PARTEI').checked = properties.block_DE_DIE_PARTEI;
 	// AfD blocker functionality is not implemented.
+	document.getElementById('block_ES_PSOE').checked = properties.block_ES_PSOE;
+	document.getElementById('block_ES_PP').checked = properties.block_ES_PP;
+	document.getElementById('block_ES_PC').checked = properties.block_ES_PC;
+	document.getElementById('block_ES_UP').checked = properties.block_ES_UP;
+	document.getElementById('block_ES_VOX').checked = properties.block_ES_VOX;
 	document.getElementById('block_TR_AKP').checked = properties.block_TR_AKP;
 	document.getElementById('block_TR_CHP').checked = properties.block_TR_CHP;
 	document.getElementById('block_TR_HDP').checked = properties.block_TR_HDP;

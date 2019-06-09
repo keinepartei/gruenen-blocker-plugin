@@ -94,6 +94,26 @@
 	"blockDeAfDNotice": {
 		"message": "* Blockieren Sie Internetinhalte der Alternative für Deutschland (AfD) bitte mit dem original AfD-Blocker von der Partei Die PARTEI. Alternativ können Sie auch Inhalte von die Partei Die PARTEI blockieren. Denn ungeachtet der Schreibweise filtert das System alle Inhalte mit 'die partei', wodurch auch der eine odere andere Inhalt der AfD blockiert würde."
 	},
+	"blockEsPsoeName": {
+		"message": "Spanische Sozialistische Arbeiterpartei (PSOE)",
+		"description": "Block the Spanish Socialist Workers' Party (PSOE)."
+	},
+	"blockEsPpName": {
+		"message": "Spanische Volkspartei (PP)",
+		"description": "Block the People's Party (PP)."
+	},
+	"blockEsCiudadanosName": {
+		"message": "Partei der Bürgerschaft (Ciudadanos)",
+		"description": "Block the Ciudadanos Party (Ciudadanos)."
+	},
+	"blockEsUpdName": {
+		"message": "Unidos Podemos (UP)",
+		"description": "Block the United We Can Party - Unidos Podemos(PP)."
+	},
+	"blockEsVoxName": {
+		"message": "Vox (VOX)",
+		"description": "Block the Vox political party (VOX)."
+	},
 	"blockTrAkpName": {
 		"message": "Partei für Gerechtigkeit und Aufschwung (AKP)",
 		"description": "Blockiere die Partei für Gerechtigkeit und Aufschwung (AKP)."
@@ -122,6 +142,9 @@
 	},
 	"countryDeName": {
 		"message": "Deutschland (DE)"
+	},
+	"countryEsName": {
+		"message": "Spanien (ES)"
 	},
 	"countryTrName": {
 		"message": "Türkei (TR)"
