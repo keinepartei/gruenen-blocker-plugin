@@ -17,21 +17,29 @@ console.log("Call content blocker.");
 import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
-    { // Teaser right.
+	{ // Teaser right.
         selector: 'article.teaser--video',
         type: 'big',
         align: 'top',
         imageHeight: '51.5%',
         title: 'color: #be0028; font-size: 1.6rem; line-height: 1.2;',
         txt: 'color: #000; font-size: 1.9rem; line-height: 1.2; font-weight: bold;'
+    },	
+    { // Teaser inline wide.
+        selector: 'article.teaser--wide',	
+        type: 'big',
+        align: 'top',
+        imageHeight: '55.5%',
+        title: 'color: rgb(190, 0, 40); font-size: 16px; line-height: 19.2px; font-weight: 700; font-family: Arial, Helvetica, sans-serif;',
+        txt: 'color: #900; font-size: 25px; line-height: 26px; font-weight: 700; font-family: Arial, Helvetica, sans-serif;'
     },
-    { // Teaser inline.
+    { // Teaser inline medium.
         selector: 'article.teaser--inline',
         type: 'big',
         align: 'left',
-        imageWidth: '33.333%',
-        title: 'color: #be0028; font-size: 19px; line-height: 22.6px; font-weight: 700, font-family: Arial, Helvetica, sans-serif;', 
-        txt: 'color: #000; font-size: 2.0rem; line-height: 1.2; font-weight: bold;'
+        imageWidth: '32%',
+        title: 'color: rgb(190, 0, 40); font-size: 16px; line-height: 19.2px; font-weight: 700, font-family: Arial, Helvetica, sans-serif;', 
+        txt: 'color: #000; font-size: 19px; line-height: 22.8px; font-weight: 700; font-family: Arial, Helvetica, sans-serif;'
     },
     { // Section 'Meistgelesen'.
         selector: 'li.teaser',

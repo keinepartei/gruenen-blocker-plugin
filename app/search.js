@@ -96,13 +96,13 @@ module.exports = {
 };
 
 function lowerCase(string) {
-	return  " or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞ', 'abcdefghijklmnopqrstuvwxyzäöüğ'),'" + string + "')";
+	return  " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜĞ', 'abcdefghijklmnopqrstuvwxyzäöüğ'),'" + string + "')";
 }
 
 function match(strings) {
 	let r = "";
 	strings.forEach(function(s) {
-		r += " or contains(text(),'" + s + "')";
+		r += " or contains(.,'" + s + "')";
 	});
 	return r;
 }

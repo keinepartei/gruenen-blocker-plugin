@@ -20,26 +20,10 @@ import { Blocker } from "./blocker";
 
 let blocker = new Blocker([
 	{
-        selector: 'div._5pcb',
-    },
-	{
-        selector: '._77we',
-        type: 'big'
+        selector: '#pages_side_column ul li',
     },
     {
-        selector: '._4b0l',
-        type: 'big'
-    },
-    {
-        selector: '#facebook ._-kb div',
-        type: 'big'
-    },
-    {
-        selector: '._6-e5',
-        type: 'big'
-    },
-    {
-        selector: '#facebook _5pcr userContentWrapper',
+        selector: 'div.userContentWrapper',
     }
 ]);
 

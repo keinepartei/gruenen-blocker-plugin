@@ -97,8 +97,9 @@ function parseHtmlTitleOnly(html) {
     const parser = new DOMParser();
     const parsed = parser.parseFromString(html, 'text/html');
     const overlay = parsed.getElementsByClassName('gb-cb-ol')[0];
-    var bg = browser.runtime.getURL("images/bg.png");
-    overlay.style.setProperty('background', ': repeat url("' + bg + '") #fff');
+//    var bg = browser.runtime.getURL("images/bg.png");
+//    overlay.style.setProperty('background', ': repeat url("' + bg + '") #fff');
+    overlay.style = 'background: repeat url("' + browser.runtime.getURL("images/bg.png") + '") #fff';
     let s = browser.i18n.getMessage("overlayTitle");
     if (s) {
     	overlay.getElementsByClassName('gb-cb-ol-title')[0].textContent = s;
