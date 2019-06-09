@@ -37,6 +37,7 @@ Facebook, Instagram, Twitter, Youtube und Izlesene. DuckDuckGo, Startpage, Qwant
 - [Chrome Extension](https://chrome.google.com/webstore/detail/gr%C3%BCnen-blocker/hhpcjimcpbbihmamgphcafoeohhblmpo)
 - [Firefox Add-on (Deutsch)](https://addons.mozilla.org/de/firefox/addon/gr%C3%BCnen-content-blocker/)
 - [Firefox Add-on (Englisch)](https://addons.mozilla.org/en-US/firefox/addon/gr%C3%BCnen-content-blocker/)
+- [Firefox Add-on (Französisch)](https://addons.mozilla.org/fr/firefox/addon/gr%C3%BCnen-content-blocker/)
 - [Firefox Add-on (Spanisch)](https://addons.mozilla.org/es/firefox/addon/gr%C3%BCnen-content-blocker/)
 - [Firefox Add-on (Türkisch)](https://addons.mozilla.org/tr/firefox/addon/gr%C3%BCnen-content-blocker/)
 

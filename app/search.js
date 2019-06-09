@@ -15,7 +15,7 @@ module.exports = {
 		s += lowerCase('b&uuml;ndnis 90');
 		s += lowerCase('grüne');
 		s += lowerCase('gr&uuml;ne');
-		if (properties.block_GRETA_THUNBERG) {
+		if (properties.block_ALL_GREENS || properties.block_GRETA_THUNBERG) {
 			s += match([ 'Greta T.' ]);
 			s += lowerCase('greta thunberg');
 			console.log("Block Greta Thunberg!");
@@ -84,7 +84,7 @@ module.exports = {
 			s += lowerCase('parti socialiste');
 			console.log("Block PS contents as well.");
 		}
-		if (properties.block_FR_EELV) {
+		if (properties.block_ALL_GREENS || properties.block_FR_EELV) {
 			s += match([ 'EELV' ]);
 			s += lowerCase('europe écologie les verts');
 			console.log("Block EELV contents as well.");
@@ -104,7 +104,7 @@ module.exports = {
 			s += lowerCase('partido de la ciudadanía');
 			console.log("Block Cuidadanos contents as well.");
 		}
-		if (properties.block_ES_UP) {
+		if (properties.block_ALL_GREENS || properties.block_ES_UP) {
 			s += lowerCase('unidos podemos');
 			s += lowerCase('unidas podemos');
 			console.log("Block Podemos contents as well.");
@@ -125,7 +125,7 @@ module.exports = {
 			s += match([ 'MHP' ]);
 			console.log("Block MHP contents as well.");
 		}
-		if (properties.block_TR_IYI) {
+		if (properties.block_ALL_GREENS || properties.block_TR_IYI) {
 			s += match([ 'IYI', 'İYİ Parti' ]);
 			console.log("Block İYİ Parti contents as well.");
 		}
