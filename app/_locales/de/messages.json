@@ -21,6 +21,10 @@
 		"message": "Sie blockieren den gesamten Inhalt dieser Website auf eigenen Wunsch mit unserem Bündnis90/Die Grünen Content Blocker. Wir machen Sie darauf aufmerksam, dass Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung ebenfalls blockiert werden können. Klicken Sie deshalb auf 'Abbrechen', um diese Seite zu verlassen, oder auf 'OK', wenn Sie wirklich auf dieser Seite bleiben wollen.",
 		"description": "Pflichtinformationen des Seitenanbieters zu Impressum, Datenschutz und Haftung können ebenfalls blockiert sein. Besser schnell weg!"
 	},
+	"popupDisableFilterName": {
+		"message": "Content blocker deaktivieren",
+		"desciption": "User option to enable or disable the content blocker."
+	},
 	"optionsTabGeneralName": {
 		"message": "Allgemein"
 	},
@@ -29,6 +33,10 @@
 	},
 	"optionsTabContentFilterName": {
 		"message": "Content Filter"
+	},
+	"optionsEnableFilterName": {
+		"message": "Content blocker aktivieren",
+		"desciption": "User option to enable or disable the content blocker."
 	},
 	"optionsOverlayFileredContentName": {
 		"message": "Blockierten Inhalt überlagern"

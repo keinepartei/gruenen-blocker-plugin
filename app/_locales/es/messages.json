@@ -23,6 +23,10 @@
 		"message": "La información obligatoria del proveedor secundario para la impresión, la protección de datos y la responsabilidad también se puede bloquear. ¡Mejor vete rápido!",
 		"description": "Obligatory information of the side provider to imprint, data protection and liability can also be blocked. Better get away fast!"
 	},
+	"popupDisableFilterName": {
+		"message": "Deshabilitar bloqueador",
+		"desciption": "User option to enable or disable the content blocker."
+	},
 	"optionsTabGeneralName": {
 		"message": "General",
 		"description": "General"
@@ -34,6 +38,10 @@
 	"optionsTabContentFilterName": {
 		"message": "Filtro de contenido",
 		"description": "Content Filter"
+	},
+	"optionsEnableFilterName": {
+		"message": "Habilitar bloqueador",
+		"desciption": "User option to enable or disable the content blocker."
 	},
 	"optionsOverlayFileredContentName": {
 		"message": "Superponer contenido filtrado",

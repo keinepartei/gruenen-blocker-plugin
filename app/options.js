@@ -12,7 +12,8 @@
  * Array of I18M labels to update after loading page (I18N key MUST be the same
  * as the DOM element ID).
  */
-const labels = [ 
+const labels = [
+	"optionsEnableFilterName",
 	"optionsOverlayFileredContentName",
 	"optionsHideFileredContentName",
 	"optionsOverlayBackgroundName",
@@ -84,7 +85,8 @@ function storeOptions(e) {
 		overlay_mode = 1;
 	}
 	let properties = {
-		overlay_mode : overlay_mode,		
+		overlay_mode : overlay_mode,
+		filter : document.getElementById('filter').checked,
 		block_ALL_GREENS : document.getElementById('block_ALL_GREENS').checked,
 		block_GRETA_THUNBERG : document.getElementById('block_GRETA_THUNBERG').checked,
 		block_MERKEL : document.getElementById('block_MERKEL').checked,
@@ -146,7 +148,8 @@ function restoreOptions() {
  * @returns null.
  */
 function setValues(properties) {
-	console.log("Load options: " + JSON.stringify(properties));	
+	console.log("Load options: " + JSON.stringify(properties));
+	document.getElementById('filter').checked = properties.filter === undefined || properties.filter;
 	if (properties.overlay_mode == 1) {
 		document.getElementById('hide_filtered_content').checked = true;
 	} else {

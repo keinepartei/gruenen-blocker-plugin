@@ -11,30 +11,10 @@
 	href="/css/bootstrap.min.css"
 	type="text/css"
 	rel="stylesheet">
-<style type="text/css">
-BODY>DIV {
-	border: dotted 1px #999;
-	border-radius: 5px;
-	margin: 5px 0px;
-	padding: 0px 0px;
-}
-
-BODY>DIV H1, BODY>DIV H2, BODY>DIV H3, BODY>DIV P {
-	margin: 5px;
-}
-
-BODY>DIV H3 {
-	margin-left: 10px;
-}
-
-LABEL.disabled {
-	color: #888;
-}
-UL {
-	list-style-type: none;
-	padding-inline-start: 0px;
-}
-</style>
+<link
+	href="/css/options.css"
+	type="text/css"
+	rel="stylesheet">
 </head>
 <body>
 	<nav>
@@ -73,7 +53,22 @@ UL {
 			class="tab-pane fade show active"
 			id="nav-general"
 			role="tabpanel"
-			aria-labelledby="nav-general-tab"></div>
+			aria-labelledby="nav-general-tab">
+			<div>
+				<div class="form-group">
+					<ul>
+						<li>
+							<input
+								type="checkbox"
+								id="filter">
+							<label
+								id="optionsEnableFilterName"
+								for="filter"></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div
 			class="tab-pane fade"
 			id="nav-appearance"
@@ -285,8 +280,6 @@ UL {
 								for="block_TR_IYI"></label>
 						</li>
 					</ul>
-					
-					
 					<h3 id="countryFrName">France (FR)</h3>
 					<ul>
 						<li>
@@ -330,8 +323,6 @@ UL {
 								for="block_FR_EELV"></label>
 						</li>
 					</ul>
-					
-					
 					<h3 id="countryEsName">Spain (ES)</h3>
 					<ul>
 						<li>

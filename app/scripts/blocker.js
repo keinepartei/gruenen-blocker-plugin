@@ -97,8 +97,8 @@ function parseHtmlTitleOnly(html) {
     const parser = new DOMParser();
     const parsed = parser.parseFromString(html, 'text/html');
     const overlay = parsed.getElementsByClassName('gb-cb-ol')[0];
-//    var bg = browser.runtime.getURL("images/bg.png");
-//    overlay.style.setProperty('background', ': repeat url("' + bg + '") #fff');
+// var bg = browser.runtime.getURL("images/bg.png");
+// overlay.style.setProperty('background', ': repeat url("' + bg + '") #fff');
     overlay.style = 'background: repeat url("' + browser.runtime.getURL("images/bg.png") + '") #fff';
     let s = browser.i18n.getMessage("overlayTitle");
     if (s) {
@@ -230,15 +230,19 @@ export class Blocker {
     }
     
     run() {
-		browser.storage.local.get(['searchExpression', 'overlay_background']).then((result) => {
-			this.xpathExpression = result.searchExpression;
-			if (result.overlay_background) {
-				this.updateOverlayBackground(result.overlay_background);
+		browser.storage.local.get(['filter', 'searchExpression', 'overlay_background']).then((r) => {
+			if (!(r.filter === undefined || r.filter)) {
+				console.log("Skip content blocker.");
+				return;
+			}
+			this.xpathExpression = r.searchExpression;
+			if (r.overlay_background) {
+				this.updateOverlayBackground(r.overlay_background);
 			}
 			this.modifyContent([document.body]);
 			this.watchPageForMutations();
-		}, (error) => {
-			console.error("Could not initialize blocker: " + error);
+		}, (e) => {
+			console.error("Could not initialize blocker: " + e);
 		});
 	}
 }

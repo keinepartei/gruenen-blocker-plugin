@@ -1,0 +1,23 @@
+body>div {
+	border: dotted 1px #999;
+	border-radius: 5px;
+	margin: 5px 0px;
+	padding: 0px 0px;
+}
+
+body>div h1, body>div h2, body>div h3, body>div p {
+	margin: 5px;
+}
+
+body>div h3 {
+	margin-left: 10px;
+}
+
+label.disabled {
+	color: #888;
+}
+
+ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+}

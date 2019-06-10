@@ -3,8 +3,8 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.3.0",
-	"__chrome|opera__version_name": "0.3.0 beta",
+	"version": "0.3.1",
+	"__chrome|opera__version_name": "0.3.1 beta",
 	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
 	"__firefox|opera__developer": {
@@ -27,7 +27,8 @@
 	],
 	"browser_action": {
 		"default_icon": "images/icon-96.png",
-		"default_title": "Grünen Blocker"
+		"default_title": "Grünen Content Blocker",
+		"default_popup": "popup.html"
 	},
 	"__chrome|opera|edge__options_page": "options.html",
 	"options_ui": {

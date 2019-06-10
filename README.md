@@ -24,10 +24,10 @@ Use the Greens Blocker. It's much better than the [AfD-Blocker by Die PARTEI](ht
 - available for FireFox and Google Chrome,
 - available in different user languages (now English, German, French, Turkish and Spanish),
 - blocks contents about Alliance 90 / The Greens (Bündnis 90/Die Grünen),
-- optional blocks contents about German parties: SPD, Die Linke, CDU, CSU oder FDP,
-- optional blocks contents about French parties: LaREM, LR, FI, PS oder EELV,
-- optional blocks contents about Turkish parties: AKP, CHP, HDP, MHP oder İYİ Parti,
-- optional blocks contents about Spanish parties: PSOE, PP, Cuidadanos, Unidos/Unidas Podemos (UP) oder VOX,
+- optional blocks contents about German parties: SPD, Die Linke, CDU, CSU or FDP,
+- optional blocks contents about French parties: LaREM, LR, FI, PS or EELV,
+- optional blocks contents about Turkish parties: AKP, CHP, HDP, MHP or İYİ Parti,
+- optional blocks contents about Spanish parties: PSOE, PP, Cuidadanos, Unidos/Unidas Podemos (UP) or VOX,
 - works with almost all social media sites, search engines and news sites:
 
 Facebook, Instagram, Twitter, Youtube and Izlesene. DuckDuckGo, Startpage, Qwant and Yandex. Bild, FAZ, Focus, Handelsblatt, Hessische/Niedersächsische Allgemeine, Morgenpost, N-TV, Nürnberger Nachrichten und Zeitung, Spiegel, Stern, Stuttgarter Zeitung, Süddeutsche Zeitung, Tagesschau, Tagesspiegel, TAZ, ZDF, Die Zeit, and many more.
