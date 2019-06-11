@@ -3,8 +3,8 @@
 	"name": "__MSG_appName__",
 	"short_name": "__MSG_appShortName__",
 	"description": "__MSG_appDescription__",
-	"version": "0.3.1",
-	"__chrome|opera__version_name": "0.3.1 beta",
+	"version": "0.3.2",
+	"__chrome|opera__version_name": "0.3.2 beta",
 	"__chrome|firefox|opera__homepage_url": "https://github.com/keinepartei/gruenen-blocker-plugin",
 	"author": "Keine Partei",
 	"__firefox|opera__developer": {
@@ -282,10 +282,21 @@
 		},
 		{
 			"matches": [
-				"*://twitter.com/*"
+				"*://*.twitter.com/*"
 			],
 			"js": [
 				"scripts/blocker_twitter.js"
+			],
+			"css": [
+				"css/overlay.css"
+			]
+		},
+		{
+			"matches": [
+				"*://*.welt.de/*"
+			],
+			"js": [
+				"scripts/blocker_welt.js"
 			],
 			"css": [
 				"css/overlay.css"

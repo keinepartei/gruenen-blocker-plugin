@@ -7,7 +7,7 @@ Languages:
 [![Turkish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/TR.svg)](README.tr.md) -
 [![Spanish](https://github.com/madebybowtie/FlagKit/blob/master/Assets/SVG/ES.svg)](README.es.md) -
 
-![Bündnis 90/Die Grünen Content Blocker](app/images/icon-128.png)
+![Greens Content Blocker](app/images/icon-128.png)
 
 # Greens Content Blocker
 
